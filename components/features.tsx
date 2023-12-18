@@ -21,26 +21,40 @@ export default function Features() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
-                  className="fill-current text-purple-600"
+                  className="fill-current text-blue-800" // Changed to dark blue
                   width="64"
                   height="64"
                   rx="32"
                 />
-                <path
-                  className="stroke-current text-purple-100"
-                  d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924"
-                  strokeLinecap="square"
+                <circle
+                  className="stroke-current text-blue-100" // Dark blue theme for the circle
+                  cx="32"
+                  cy="32"
+                  r="20"
                   strokeWidth="2"
                   fill="none"
-                  fillRule="evenodd"
                 />
+                <circle
+                  className="fill-current text-blue-300" // Lighter blue for inner glow effect
+                  cx="32"
+                  cy="32"
+                  r="10"
+                />
+                {/* Crystal ball shading for a more 3D effect */}
                 <path
-                  className="stroke-current text-purple-300"
+                  className="stroke-current text-blue-300"
+                  d="M32 12 Q44 32 32 52 Q20 32 32 12"
+                  strokeWidth="0.5"
+                />
+                {/* Same lines as in the original SVG */}
+                <path
+                  className="stroke-current text-blue-300"
                   d="M43 42h-9M43 37h-9"
                   strokeLinecap="square"
                   strokeWidth="2"
                 />
               </svg>
+
               <h4 className="h4 mb-2">Predictive Analytics</h4>
               <p className="text-lg text-gray-400 text-center">
                 Harness machine learning to analyse data trends and make accurate predictions, guiding decision-making processes across various sectors.
@@ -59,30 +73,53 @@ export default function Features() {
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <circle
-                  className="fill-current text-purple-600"
-                  cx="32"
-                  cy="32"
-                  r="32"
+                <rect
+                  className="fill-current text-blue-800" // Dark blue background
+                  width="64"
+                  height="64"
+                  rx="32"
                 />
+                {/* Lightbulb */}
+                <g fill="none" stroke="currentColor" strokeWidth="2">
+                  {/* Bulb */}
+                  <circle
+                    className="stroke-current text-blue-100" // Light bulb color
+                    cx="32"
+                    cy="24"
+                    r="12"
+                  />
+                  {/* Filament */}
+                  <path
+                    className="stroke-current text-blue-300"
+                    d="M32 24v-4"
+                  />
+                  {/* Base */}
+                  <rect
+                    className="fill-current text-blue-300"
+                    x="28"
+                    y="36"
+                    width="8"
+                    height="6"
+                    rx="2"
+                  />
+                  {/* Screw threads */}
+                  <path
+                    className="stroke-current text-blue-300"
+                    d="M28 42h8M28 44h8"
+                  />
+                </g>
+                {/* Same lines as in the original SVG */}
                 <path
-                  className="stroke-current text-purple-100"
-                  strokeWidth="2"
+                  className="stroke-current text-blue-300"
+                  d="M43 42h-9M43 37h-9"
                   strokeLinecap="square"
-                  d="M21 23h22v18H21z"
-                  fill="none"
-                  fillRule="evenodd"
-                />
-                <path
-                  className="stroke-current text-purple-300"
-                  d="M26 28h12M26 32h12M26 36h5"
                   strokeWidth="2"
-                  strokeLinecap="square"
                 />
               </svg>
+
               <h4 className="h4 mb-2">Generative AI</h4>
               <p className="text-lg text-gray-400 text-center">
-                Leverage Generative AI to create novel content, from realistic images and text to complex data models, changing the way we write, build and create.
+                Leverage Generative AI to create novel content, from realistic images to specialized text, changing the way we write, build and create.
               </p>
             </div>
 
@@ -99,40 +136,39 @@ export default function Features() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
-                  className="fill-current text-purple-600"
+                  className="fill-current text-blue-800" // Dark blue background
                   width="64"
                   height="64"
                   rx="32"
                 />
-                <g
-                  transform="translate(21 21)"
+                {/* Chart Trending Upwards */}
+                <polyline
+                  className="stroke-current text-blue-100" // Line color
+                  points="16,48 28,36 40,40 52,24"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                />
+                {/* Dots on the Chart */}
+                <g className="fill-current text-blue-300">
+                  <circle cx="16" cy="48" r="2" />
+                  <circle cx="28" cy="36" r="2" />
+                  <circle cx="40" cy="40" r="2" />
+                  <circle cx="52" cy="24" r="2" />
+                </g>
+                {/* Same lines as in the original SVG */}
+                <path
+                  className="stroke-current text-blue-300"
+                  d="M43 42h-9M43 37h-9"
                   strokeLinecap="square"
                   strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <ellipse
-                    className="stroke-current text-purple-300"
-                    cx="11"
-                    cy="11"
-                    rx="5.5"
-                    ry="11"
-                  />
-                  <path
-                    className="stroke-current text-purple-100"
-                    d="M11 0v22M0 11h22"
-                  />
-                  <circle
-                    className="stroke-current text-purple-100"
-                    cx="11"
-                    cy="11"
-                    r="11"
-                  />
-                </g>
+                />
               </svg>
+
               <h4 className="h4 mb-2">Process Optimisation</h4>
               <p className="text-lg text-gray-400 text-center">
-                Analyse and optimise critical operational processes, ensuring maximum efficiency and resource utilisation.
+                Analyse and optimise critical operational processes, ensuring maximum quality, efficiency and resource utilisation.
               </p>
             </div>
 

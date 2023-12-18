@@ -24,9 +24,9 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">Building AI tech <br/>to empower the most critical professions in the world</h1>
+            <h1 className="h1 mb-4" data-aos="fade-up">Building AI<br/>for the most critical professions in the world</h1>
 
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">We build AI technology to empower the most critical professions in the world</p>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">We create AI technology to address the crucial challenges of our time.</p>
           </div>
 
         </div>
