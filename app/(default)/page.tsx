@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'xval.ai',
+  description: 'AI for the most critical professions in the world',
 }
 
 import Hero from '@/components/hero'
