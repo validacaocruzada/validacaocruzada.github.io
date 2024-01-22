@@ -9,7 +9,7 @@ export default function Footer() {
 
 
           {/* Bottom area */}
-          <div className="md:flex md:items-center md:justify-between">
+          <div className="md:flex md:items-center md:justify-center">
 
             {/* Social links
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
@@ -53,8 +53,10 @@ export default function Footer() {
             </ul> */}
 
             {/* Copyrights note */}
-            <div className="text-gray-400 text-sm mr-4">
-              hello@xval.ai <br/>
+            <div className="text-gray-400 text-sm mr-4 md:align-center">
+              <div className="text-gray-400 text-sm mr-4 md:align-center text-center">
+                hello@xval.ai <br/>
+              </div>
               &copy; 2024 xval.ai. All rights reserved.
             </div>
 
