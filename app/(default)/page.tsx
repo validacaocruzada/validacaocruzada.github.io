@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <PlausibleProvider domain="xval.ai">
       <Hero />
-      {/* <Features />
-      <Zigzag /> */}
+      <Features />
+      <Zigzag />
     </PlausibleProvider>
   )
 }
