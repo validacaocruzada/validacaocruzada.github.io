@@ -150,3 +150,42 @@
         transform: translate3d(10px, 0, 0) scale(1.2);
     }
 }
+
+/* Landing page atmosphere */
+.page-illustration-glow {
+    position: absolute;
+    top: -13rem;
+    left: 50%;
+    width: min(64rem, 90vw);
+    height: 34rem;
+    transform: translateX(-50%);
+    background: radial-gradient(ellipse at center, rgb(93 93 255 / 22%) 0%, rgb(93 93 255 / 8%) 38%, transparent 72%);
+    filter: blur(10px);
+    opacity: .7;
+}
+
+.hero-grid {
+    background-image:
+        linear-gradient(to right, rgb(197 210 220 / 6%) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(197 210 220 / 6%) 1px, transparent 1px);
+    background-position: center top;
+    background-size: 64px 64px;
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, rgb(0 0 0 / 72%) 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, rgb(0 0 0 / 72%) 55%, transparent 100%);
+}
+
+.hero-grid::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: radial-gradient(circle at 50% 20%, rgb(93 93 255 / 13%), transparent 44%);
+}
+
+.cta-grid {
+    background-image:
+        linear-gradient(to right, rgb(21 23 25 / 5%) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(21 23 25 / 5%) 1px, transparent 1px);
+    background-size: 48px 48px;
+    -webkit-mask-image: radial-gradient(circle at center, black, transparent 76%);
+    mask-image: radial-gradient(circle at center, black, transparent 76%);
+}

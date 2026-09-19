@@ -18,41 +18,43 @@ const services = [
 
 export default function Features() {
   return (
-    <section id="services">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+    <section id="services" aria-labelledby="services-title">
+      <div className="max-w-6xl mx-auto border-t border-gray-800/80 px-4 py-16 sm:px-6 md:py-24">
+        <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
+          <h2 id="services-title" className="h2 mb-4 text-gray-100">What we build</h2>
+          <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
+            Production systems, not slide decks. Every engagement ends with code running in your environment.
+          </p>
+        </div>
 
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">What we build</h2>
-            <p className="text-xl text-gray-400">
-              Production systems, not slide decks. Every engagement ends with code running in your environment.
-            </p>
-          </div>
-
-          <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-3 lg:gap-12 items-start md:max-w-none">
-            {services.map((s, i) => (
-              <div
-                key={s.title}
-                className="relative flex flex-col h-full p-6 bg-gray-800 rounded-md"
-                data-aos="fade-up"
-                data-aos-delay={i * 100}
-              >
-                <h4 className="h4 mb-3">{s.title}</h4>
-                <p className="text-lg text-gray-400 mb-4">{s.body}</p>
-                <ul className="text-gray-400 space-y-2 mt-auto">
-                  {s.examples.map((e) => (
-                    <li key={e} className="flex items-start">
-                      <svg className="w-3 h-3 fill-current text-purple-500 mr-2 mt-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                      </svg>
-                      <span>{e}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
+        <div className="mx-auto grid max-w-sm items-stretch gap-6 md:max-w-none md:grid-cols-3 lg:gap-8">
+          {services.map((service, index) => (
+            <article
+              key={service.title}
+              className="group relative flex h-full flex-col rounded-2xl border border-gray-700/60 bg-gray-800 p-6 transition duration-300 motion-safe:hover:-translate-y-1 hover:border-gray-600 md:p-7"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div className="mb-5 h-1 w-10 rounded-full bg-purple-600 transition-all duration-300 group-hover:w-16" aria-hidden="true" />
+              <h3 className="h4 mb-3 text-gray-100">{service.title}</h3>
+              <p className="mb-6 text-base leading-relaxed text-gray-400 sm:text-lg">{service.body}</p>
+              <ul className="mt-auto space-y-3 text-sm leading-relaxed text-gray-300 sm:text-base">
+                {service.examples.map((example) => (
+                  <li key={example} className="flex items-start">
+                    <svg
+                      className="mr-3 mt-1.5 h-3 w-3 shrink-0 fill-current text-purple-400"
+                      viewBox="0 0 12 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                    </svg>
+                    <span>{example}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
       </div>
     </section>
