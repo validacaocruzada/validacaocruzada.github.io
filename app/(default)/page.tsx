@@ -5,12 +5,13 @@ import Features from '@/components/features'
 import Process from '@/components/process'
 import Engagement from '@/components/engagement'
 import Cta from '@/components/cta'
+import Faq from '@/components/faq'
 import PlausibleProvider from 'next-plausible'
 
-const title = 'xval.ai — AI-native software factory for machine learning, data and AI'
-const description = 'Forecasting models, LLM applications and data platforms, specified by engineers and built by AI agents. Fixed scope, fixed price, delivered in weeks. Book a free 30-min call.'
+const title = 'xval.ai — Machine learning & AI, delivered as a fixed-price project'
+const description = 'Fraud and risk scoring, forecasting, document automation. Proven on your data in a 2-week proof of value, then built into production. Fixed scope, fixed price. Book a free 30-min call.'
 
-const ogImage = { url: '/og.png', width: 1200, height: 630, alt: 'xval.ai — AI-native software factory' }
+const ogImage = { url: '/og.png', width: 1200, height: 630, alt: title }
 
 export const metadata: Metadata = {
   title,
@@ -38,6 +39,7 @@ export default function Home() {
       <Features />
       <Process />
       <Engagement />
+      <Faq />
       <Cta />
     </PlausibleProvider>
   )

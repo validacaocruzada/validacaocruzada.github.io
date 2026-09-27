@@ -2,27 +2,33 @@ import { BOOKING_URL } from '@/components/links'
 
 const offers = [
   {
-    title: 'Discovery sprint',
-    duration: '1 week · fixed price',
-    body: 'We audit your data and the problem, write the spec and the acceptance scenarios, and give you a fixed-price quote for the build. If you stop here, you still own a spec any team can execute.',
+    label: 'Option A',
+    title: 'Proof of value',
+    duration: '2 weeks · fixed price',
+    body: 'We take your historical data and show that a model reproduces the decisions your team makes today. You get a results deck with the numbers, the baseline model and your data scored. Enough to decide go / no-go with confidence.',
+    fit: 'Best when you want proof before committing to a production system.',
   },
   {
-    title: 'Build sprint',
-    duration: '2–6 weeks · fixed price',
-    body: 'The factory grows the system against the scenarios you approved. Weekly demos on real data. You pay on milestones: kick-off, mid-point, acceptance.',
+    label: 'Option B',
+    title: 'Production build',
+    duration: '4–6 weeks · fixed price',
+    body: 'We connect to your data, improve the model and deliver the scores where your team works: an API your systems call or a dashboard your people open. Running on your servers or on our cloud.',
+    fit: 'Best when the case is clear, or after a successful proof of value.',
   },
   {
+    label: 'Option C',
     title: 'Run & improve',
     duration: 'Monthly · cancel anytime',
-    body: 'Monitoring, retraining, new scenarios as your business changes. The harness keeps running, so improvements ship without regressions.',
+    body: 'We host, monitor and maintain the system: drift checks, retraining with new data, fixes and new features as your business changes. Your team uses the results; we keep them accurate.',
+    fit: 'Best when you want the outcome without running the system yourself.',
   },
 ]
 
 const guarantees = [
-  'Fixed scope and fixed price, agreed before we start. Projects from €2,500.',
-  'Acceptance defined by scenarios you approve, not by our opinion.',
-  'You own everything: code, models, tests, harness, documentation.',
-  'Deployed in your cloud. No lock-in to us or to a platform.',
+  'Fixed scope and fixed price, agreed in writing before we start.',
+  'Success criteria in plain numbers, agreed at kick-off, measured on delivery.',
+  'You own everything we deliver: code, models, tests and documentation.',
+  'Runs on your servers or on our cloud. Maintenance and hosting available if you want them.',
 ]
 
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900'
@@ -32,9 +38,9 @@ export default function Engagement() {
     <section id="engagement" aria-labelledby="engagement-title">
       <div className="max-w-6xl mx-auto border-t border-gray-800/80 px-4 py-16 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-          <h2 id="engagement-title" className="h2 mb-4 text-gray-100">How we engage</h2>
+          <h2 id="engagement-title" className="h2 mb-4 text-gray-100">Three ways to work with us</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            Small, fixed-price steps. Each one leaves you with something you own, whether or not you take the next.
+            Every engagement is a defined project with a fixed price and a fixed end date. Most clients start with a proof of value. Pricing is shared after the first call.
           </p>
         </div>
 
@@ -46,11 +52,13 @@ export default function Engagement() {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
+              <div className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-purple-400">{offer.label}</div>
               <h3 className="h4 mb-4 text-gray-100">{offer.title}</h3>
               <div className="mb-5 inline-flex w-fit rounded-full border border-purple-500/30 bg-purple-600/10 px-3 py-1.5 text-sm font-bold text-purple-300">
                 {offer.duration}
               </div>
-              <p className="text-base leading-relaxed text-gray-400 sm:text-lg">{offer.body}</p>
+              <p className="mb-6 text-base leading-relaxed text-gray-400 sm:text-lg">{offer.body}</p>
+              <p className="mt-auto border-t border-gray-700/70 pt-4 text-sm leading-relaxed text-gray-300">{offer.fit}</p>
             </article>
           ))}
         </div>

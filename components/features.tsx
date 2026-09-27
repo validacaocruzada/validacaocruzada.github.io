@@ -1,18 +1,18 @@
 const services = [
   {
-    title: 'Forecasting & predictive models',
-    body: 'Demand, churn, risk, pricing, maintenance. Models trained on your data, validated on holdouts you control, deployed as an API or batch job you can call on Monday.',
-    examples: ['Demand and revenue forecasting', 'Churn, default and fraud scoring', 'Predictive maintenance and anomaly detection'],
+    title: 'Fraud, risk & anomaly scoring',
+    body: 'Your analysts already know what a bad case looks like. We train a model on their past decisions so every new case gets a score automatically. Your team reviews only the uncertain ones.',
+    examples: ['Fraudulent traffic, accounts and transactions', 'Credit, churn and default risk', 'Anomalies in sensors, operations and billing'],
   },
   {
-    title: 'LLM applications & agents',
-    body: 'Document processing, retrieval over your knowledge base, and agents that execute multi-step workflows. Grounded in your data, with evaluation suites so you can trust the answers.',
-    examples: ['Document extraction and classification', 'RAG assistants over internal knowledge', 'Workflow agents for back-office processes'],
+    title: 'Forecasting & planning',
+    body: 'Replace the spreadsheet and the gut feel with a model that forecasts from your history and updates itself. Better numbers for stock, staffing, pricing and cash.',
+    examples: ['Demand, sales and revenue forecasting', 'Stock and capacity planning', 'Pricing and promotion impact'],
   },
   {
-    title: 'Data pipelines & analytics platforms',
-    body: 'The plumbing that makes the models possible: ingestion, cleaning, feature stores, dashboards. Built to run unattended and hand over cleanly to your team.',
-    examples: ['ETL / ELT pipelines and data warehouses', 'Feature engineering and MLOps', 'Dashboards and reporting automation'],
+    title: 'Document & back-office automation',
+    body: 'Invoices, contracts, claims, emails, tickets. AI reads them, extracts what matters, classifies, routes and answers, with a human in the loop where it counts.',
+    examples: ['Extraction and classification of documents', 'Assistants over your internal knowledge', 'Automated processing of repetitive workflows'],
   },
 ]
 
@@ -23,7 +23,7 @@ export default function Features() {
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
           <h2 id="services-title" className="h2 mb-4 text-gray-100">What we build</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            Production systems, not slide decks. Every engagement ends with code running in your environment.
+            Working systems, not slide decks. Every project ends with a model running on your data, wired into your operation.
           </p>
         </div>
 
@@ -56,6 +56,10 @@ export default function Features() {
             </article>
           ))}
         </div>
+
+        <p className="mx-auto mt-10 max-w-3xl text-center text-base leading-relaxed text-gray-400 sm:text-lg" data-aos="fade-up">
+          Need the data pipelines, dashboards or infrastructure that make this possible? We build those too, as part of the project.
+        </p>
       </div>
     </section>
   )

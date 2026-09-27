@@ -10,10 +10,10 @@ export default function Cta() {
           <div className="cta-grid absolute inset-0" aria-hidden="true" />
           <div className="relative mx-auto max-w-3xl">
             <h2 id="contact-title" className="h2 mb-5 text-gray-900">
-              Have a problem that needs a model, a pipeline or an agent?
+              Which decision would you automate first?
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-gray-600 sm:text-xl">
-              Bring the problem and a sample of the data. In 30 minutes you will know whether it is feasible, roughly what it costs, and how long it takes.
+              Bring the problem. In 30 minutes you will know whether it is feasible, what we would build, how long it takes and roughly what it costs.
             </p>
             <div className="mx-auto flex max-w-xs flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
               <a

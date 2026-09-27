@@ -14,19 +14,19 @@ export default function Hero() {
               className="mb-5 text-xs font-bold uppercase tracking-widest text-purple-400 sm:text-sm"
               data-aos="fade-up"
             >
-              AI-native software factory
+              Machine learning &amp; AI, delivered as a fixed-price project
             </div>
             <h1 id="hero-title" className="h1 mb-6 text-gray-100" data-aos="fade-up" data-aos-delay="100">
-              Machine learning, data and AI systems. Specified by engineers, built by agents, delivered in weeks.
+              Automate the decisions your team makes by hand. Proven on your data in two weeks.
             </h1>
             <p
               className="mx-auto mb-9 max-w-3xl text-lg leading-relaxed text-gray-400 sm:text-xl"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              xval.ai builds forecasting models, LLM applications and data platforms for companies that need results, not headcount.
-              Our engineers own the spec, the acceptance scenarios and your outcome. AI agents write, test and ship every line of code.
-              Fixed scope, fixed price, no surprises.
+              Fraud you catch one case at a time. Demand you forecast in a spreadsheet. Documents someone reads and retypes.
+              xval.ai builds the model that does it for every case, every day, and puts it into production in weeks.
+              Fixed scope, fixed price, success criteria agreed before we start.
             </p>
 
             <div
@@ -51,7 +51,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-6 text-sm leading-relaxed text-gray-400" data-aos="fade-up" data-aos-delay="400">
-              You leave the call with a scoped proposal or a straight “this is not a fit”. Either way, no cost.
+              30 minutes. You leave with a clear answer: what we would build, how long it takes, what it costs, or a straight “this is not a fit”.
             </p>
           </div>
         </div>

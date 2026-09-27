@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <Image src={Logo} alt="xval.ai" className="h-6 w-auto" />
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-gray-400">
-              AI-native software factory for machine learning, data science and AI. Lisbon, Portugal.
+              Machine learning and AI systems, delivered as fixed-price projects. Lisbon, Portugal.
             </p>
           </div>
 
