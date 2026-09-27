@@ -8,8 +8,8 @@ const faqs = [
     a: 'Exports from the systems you already use: your database, your platform, spreadsheets, CSV files. Nothing has to be clean. Part of every project is a data audit where we tell you what is usable and what is missing. As a rule of thumb, a few thousand past cases with the outcome is enough to start.',
   },
   {
-    q: 'What does the proof of value actually give me?',
-    a: 'Three things: a short results deck with the numbers against the success criteria we agreed (for example: share of fraud caught, share of false alarms), the baseline model, and your historical data scored by it. You can act on that alone, or use it to decide on the production build.',
+    q: 'What do I get at the end?',
+    a: 'A results presentation with the numbers against the success criteria we agreed (for example: forecast error, share of cases classified correctly), and the working system: model, code, tests and documentation, delivered where your team works. Then you decide whether we maintain it or your team takes it over.',
   },
   {
     q: 'Who owns what you build?',
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'Where does it run, and who maintains it?',
-    a: 'Either on your servers or on our cloud; we recommend after the proof of value, once we know the data volume and where it lives. Maintenance, monitoring and retraining are available as a monthly service, cancel anytime. You can also take it in-house at any point.',
+    a: 'Either on your servers or on our cloud; we recommend once we know the data volume and where it lives. Maintenance, monitoring and retraining are available as a monthly service, cancel anytime. You can also take it in-house at any point.',
   },
   {
     q: 'How do you deliver this fast at a fixed price?',

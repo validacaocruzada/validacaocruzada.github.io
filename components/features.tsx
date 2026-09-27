@@ -1,10 +1,5 @@
 const services = [
   {
-    title: 'Fraud, risk & anomaly scoring',
-    body: 'Your analysts already know what a bad case looks like. We train a model on their past decisions so every new case gets a score automatically. Your team reviews only the uncertain ones.',
-    examples: ['Fraudulent traffic, accounts and transactions', 'Credit, churn and default risk', 'Anomalies in sensors, operations and billing'],
-  },
-  {
     title: 'Forecasting & planning',
     body: 'Replace the spreadsheet and the gut feel with a model that forecasts from your history and updates itself. Better numbers for stock, staffing, pricing and cash.',
     examples: ['Demand, sales and revenue forecasting', 'Stock and capacity planning', 'Pricing and promotion impact'],
@@ -13,6 +8,11 @@ const services = [
     title: 'Document & back-office automation',
     body: 'Invoices, contracts, claims, emails, tickets. AI reads them, extracts what matters, classifies, routes and answers, with a human in the loop where it counts.',
     examples: ['Extraction and classification of documents', 'Assistants over your internal knowledge', 'Automated processing of repetitive workflows'],
+  },
+  {
+    title: 'Classification & risk scoring',
+    body: 'Your team already knows what a good or bad case looks like. We train a model on their past decisions so every new case gets a score automatically. Your team reviews only the uncertain ones.',
+    examples: ['Credit, churn and default risk', 'Fraud in traffic, accounts and transactions', 'Anomalies in sensors, operations and billing'],
   },
 ]
 

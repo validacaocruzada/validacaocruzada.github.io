@@ -3,18 +3,17 @@ import type { Metadata } from 'next'
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import Process from '@/components/process'
-import Engagement from '@/components/engagement'
 import Cta from '@/components/cta'
 import Faq from '@/components/faq'
 import PlausibleProvider from 'next-plausible'
 
 const title = 'xval.ai — Machine learning & AI, delivered as a fixed-price project'
-const description = 'Fraud and risk scoring, forecasting, document automation. Proven on your data in a 2-week proof of value, then built into production. Fixed scope, fixed price. Book a free 30-min call.'
+const description = 'Forecasting, document automation and risk scoring. Built on your data and running in weeks, as a fixed-price project. Book a free 30-min call.'
 
 const ogImage = { url: '/og.png', width: 1200, height: 630, alt: title }
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   openGraph: {
     type: 'website',
@@ -38,7 +37,6 @@ export default function Home() {
       <Hero />
       <Features />
       <Process />
-      <Engagement />
       <Faq />
       <Cta />
     </PlausibleProvider>

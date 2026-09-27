@@ -12,7 +12,7 @@ const inter = Inter({
   display: 'swap'
 })
 
-const description = 'Fraud and risk scoring, forecasting and document automation, proven on your data in two weeks and delivered as a fixed-price project.'
+const description = 'Forecasting, document automation and risk scoring, built on your data and running in weeks, as a fixed-price project.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xval.ai'),

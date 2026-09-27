@@ -17,7 +17,7 @@ export default function Hero() {
               Machine learning &amp; AI, delivered as a fixed-price project
             </div>
             <h1 id="hero-title" className="h1 mb-6 text-gray-100" data-aos="fade-up" data-aos-delay="100">
-              Automate the decisions your team makes by hand. Proven on your data in two weeks.
+              Automate the decisions your team makes by hand. Running on your data in weeks.
             </h1>
             <p
               className="mx-auto mb-9 max-w-3xl text-lg leading-relaxed text-gray-400 sm:text-xl"
