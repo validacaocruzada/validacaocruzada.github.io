@@ -7,8 +7,8 @@ import Cta from '@/components/cta'
 import Faq from '@/components/faq'
 import PlausibleProvider from 'next-plausible'
 
-const title = 'xval.ai — Machine learning & AI, delivered as a fixed-price project'
-const description = 'Forecasting, document automation and risk scoring. Built on your data and running in weeks, as a fixed-price project. Book a free 30-min call.'
+const title = 'xval.ai — Machine learning, data science & AI, delivered as a fixed-price project'
+const description = 'Document automation, forecasting and risk scoring. Built on your data and running in weeks, as a fixed-price project. Book a free 30-min call.'
 
 const ogImage = { url: '/og.png', width: 1200, height: 630, alt: title }
 

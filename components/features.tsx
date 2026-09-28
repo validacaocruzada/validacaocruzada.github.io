@@ -1,13 +1,13 @@
 const services = [
   {
-    title: 'Forecasting & planning',
-    body: 'Replace the spreadsheet and the gut feel with a model that forecasts from your history and updates itself. Better numbers for stock, staffing, pricing and cash.',
-    examples: ['Demand, sales and revenue forecasting', 'Stock and capacity planning', 'Pricing and promotion impact'],
-  },
-  {
     title: 'Document & back-office automation',
     body: 'Invoices, contracts, claims, emails, tickets. AI reads them, extracts what matters, classifies, routes and answers, with a human in the loop where it counts.',
     examples: ['Extraction and classification of documents', 'Assistants over your internal knowledge', 'Automated processing of repetitive workflows'],
+  },
+  {
+    title: 'Forecasting & planning',
+    body: 'Replace the spreadsheet and the gut feel with a model that forecasts from your history and updates itself. Better numbers for stock, staffing, pricing and cash.',
+    examples: ['Demand, sales and revenue forecasting', 'Stock and capacity planning', 'Pricing and promotion impact'],
   },
   {
     title: 'Classification & risk scoring',

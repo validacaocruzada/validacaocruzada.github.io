@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Logo from '@/public/images/logo-white.png'
 import { BOOKING_URL, CONTACT_EMAIL } from '@/components/links'
+import Year from '@/components/year'
 
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900'
 
@@ -12,7 +13,7 @@ export default function Footer() {
           <div>
             <Image src={Logo} alt="xval.ai" className="h-6 w-auto" />
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-gray-400">
-              Machine learning and AI systems, delivered as fixed-price projects.
+              Machine learning, data science and AI, delivered as fixed-price projects.
             </p>
           </div>
 
@@ -35,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-gray-800 pt-6 text-xs text-gray-400">
-          &copy; {new Date().getFullYear()} xval.ai. All rights reserved.
+          &copy; <Year /> xval.ai. All rights reserved.
         </div>
       </div>
     </footer>

@@ -14,17 +14,17 @@ export default function Hero() {
               className="mb-5 text-xs font-bold uppercase tracking-widest text-purple-400 sm:text-sm"
               data-aos="fade-up"
             >
-              Machine learning &amp; AI, delivered as a fixed-price project
+              Machine learning, data science &amp; AI · Fixed-price projects
             </div>
             <h1 id="hero-title" className="h1 mb-6 text-gray-100" data-aos="fade-up" data-aos-delay="100">
-              Automate the decisions your team makes by hand. Running on your data in weeks.
+              Automate the decisions your team makes by hand.
             </h1>
             <p
               className="mx-auto mb-9 max-w-3xl text-lg leading-relaxed text-gray-400 sm:text-xl"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Fraud you catch one case at a time. Demand you forecast in a spreadsheet. Documents someone reads and retypes.
+              Invoices and contracts someone reads and retypes. Next quarter&rsquo;s demand estimated in a spreadsheet. Applications, claims and transactions reviewed one by one.
               xval.ai builds the model that does it for every case, every day, and puts it into production in weeks.
               Fixed scope, fixed price, success criteria agreed before we start.
             </p>
