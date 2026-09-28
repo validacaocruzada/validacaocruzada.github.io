@@ -14,10 +14,10 @@ export default function Hero() {
               Fixed-price AI systems for operations &amp; finance teams
             </div>
             <h1 id="hero-title" className="h1 mb-6 text-gray-100">
-              Automate document, forecasting and risk work &mdash; running in 2&ndash;6 weeks.
+              Automate the decisions your team makes by hand.
             </h1>
             <p className="mx-auto mb-9 max-w-3xl text-lg leading-relaxed text-gray-400 sm:text-xl">
-              We build a production system on your data, agree success metrics and a fixed price before work starts, and hand over the code.
+              We build a production system on your data in 2&ndash;6 weeks, agree success metrics and a fixed price before work starts, and hand over the code.
             </p>
 
             <div className="flex justify-center">
