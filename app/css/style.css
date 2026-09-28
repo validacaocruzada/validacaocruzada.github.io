@@ -16,6 +16,18 @@
     }
 }
 
+/* Fixed header (h-20) must not cover anchor targets */
+html {
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 /* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
 [x-cloak=""] {
     display: none;

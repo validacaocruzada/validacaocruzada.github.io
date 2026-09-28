@@ -28,12 +28,10 @@ export default function Features() {
         </div>
 
         <div className="mx-auto grid max-w-sm items-stretch gap-6 md:max-w-none md:grid-cols-3 lg:gap-8">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <article
               key={service.title}
               className="group relative flex h-full flex-col rounded-2xl border border-gray-700/60 bg-gray-800 p-6 transition duration-300 motion-safe:hover:-translate-y-1 hover:border-gray-600 md:p-7"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
             >
               <div className="mb-5 h-1 w-10 rounded-full bg-purple-600 transition-all duration-300 group-hover:w-16" aria-hidden="true" />
               <h3 className="h4 mb-3 text-gray-100">{service.title}</h3>
@@ -57,8 +55,8 @@ export default function Features() {
           ))}
         </div>
 
-        <p className="mx-auto mt-10 max-w-3xl text-center text-base leading-relaxed text-gray-400 sm:text-lg" data-aos="fade-up">
-          Need the data pipelines, dashboards or infrastructure that make this possible? We build those too, as part of the project.
+        <p className="mx-auto mt-10 max-w-3xl text-center text-base leading-relaxed text-gray-400 sm:text-lg">
+          When the agreed workflow needs a pipeline or dashboard to run, it is included in the fixed scope.
         </p>
       </div>
     </section>

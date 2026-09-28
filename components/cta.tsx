@@ -10,27 +10,38 @@ export default function Cta() {
           <div className="cta-grid absolute inset-0" aria-hidden="true" />
           <div className="relative mx-auto max-w-3xl">
             <h2 id="contact-title" className="h2 mb-5 text-gray-900">
-              Which decision would you automate first?
+              Find out if your workflow is a fit.
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-gray-600 sm:text-xl">
-              Bring the problem. In 30 minutes you will know whether it is feasible, what we would build, how long it takes and roughly what it costs.
+              In a free 30-minute call we assess the decision, the data behind it and the smallest useful build, then give you an indicative timeline and price.
             </p>
-            <div className="mx-auto flex max-w-xs flex-col justify-center gap-3 sm:max-w-none sm:flex-row">
+            <div className="flex justify-center">
               <a
-                className={`btn w-full bg-purple-600 text-white shadow-lg shadow-purple-900/20 hover:bg-purple-700 sm:w-auto ${focusRing}`}
+                className={`btn bg-purple-600 text-white shadow-lg shadow-purple-900/20 hover:bg-purple-700 ${focusRing}`}
                 href={BOOKING_URL}
+                data-umami-event="Book Call"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Book a free 30-min call
               </a>
-              <a
-                className={`btn w-full border-gray-900 bg-gray-900 text-white hover:bg-gray-700 sm:w-auto ${focusRing}`}
-                href={`mailto:${CONTACT_EMAIL}`}
-              >
-                Email {CONTACT_EMAIL}
-              </a>
             </div>
+            <p className="mt-6 text-sm text-gray-600">
+              No preparation · Straight answer in 30 minutes · Written proposal within 24 hours
+            </p>
+            <p className="mt-2 text-sm text-gray-600">
+              30 minutes with Pedro Marcelino, founder. No sales hand-off.
+            </p>
+            <p className="mt-2 text-sm text-gray-600">
+              Prefer email?{' '}
+              <a
+                className={`text-gray-700 underline-offset-4 hover:underline ${focusRing}`}
+                href={`mailto:${CONTACT_EMAIL}`}
+                data-umami-event="Email"
+              >
+                {CONTACT_EMAIL}
+              </a>
+            </p>
           </div>
         </div>
       </div>

@@ -1,7 +1,15 @@
-const faqs = [
+import { CONTACT_EMAIL } from '@/components/links'
+
+type FaqEntry = {
+  q: string
+  a: string
+  id?: string
+}
+
+const faqs: FaqEntry[] = [
   {
     q: 'Is my problem a fit?',
-    a: 'Good fit: a decision or a number your team produces repeatedly today (fraud / not fraud, how much to order, which category this document belongs to) and a few months of history where you can see what happened. If you have both, book the call. If you are not sure, book the call anyway: we will tell you in 30 minutes.',
+    a: `Good fit: a decision or a number your team produces repeatedly today (fraud / not fraud, how much to order, which category this document belongs to) and a few months of history where you can see what happened. If you have both, book the call. Not sure? Email a redacted sample and the decision you want to improve to ${CONTACT_EMAIL} and we will tell you whether a call is worth your time.`,
   },
   {
     q: 'What data do you need?',
@@ -20,8 +28,17 @@ const faqs = [
     a: 'Either on your servers or on our cloud; we recommend once we know the data volume and where it lives. Maintenance, monitoring and retraining are available as a monthly service, cancel anytime. You can also take it in-house at any point.',
   },
   {
-    q: 'How do you deliver this fast at a fixed price?',
-    a: 'Our engineers spend their time on what matters: the spec, the success criteria and checking results on your data. AI agents under their supervision write and test the code. Less time typing, more time verifying, and a price that does not grow with the number of people on the project.',
+    id: 'data-protection',
+    q: 'How do you protect our data?',
+    a: 'Before any data is transferred we agree in writing where it is stored, who can access it, which subprocessors (including AI model providers) are used, how long it is kept and how it is deleted. We sign a data processing agreement where required, and we can work entirely inside your environment so data never leaves it.',
+  },
+  {
+    q: 'What happens if the agreed result is not achieved?',
+    a: 'The acceptance test is written into the proposal before the build starts. If the delivered system does not meet it on the agreed evaluation data, we keep working at our cost or you do not pay the final milestone. Your obligations (data access, a named contact, evaluation data) are written into the same proposal.',
+  },
+  {
+    q: 'How do you deliver quickly without cutting corners?',
+    a: 'A named engineer owns the specification, architecture, review and acceptance test. We use AI-assisted coding to speed up implementation; every change is reviewed by that engineer and tested against your data before release. Price is set by scope and acceptance criteria, not hours or team size. We agree before starting which tools may see your data or code.',
   },
 ]
 
@@ -34,8 +51,8 @@ export default function Faq() {
         </div>
 
         <dl className="mx-auto grid max-w-4xl gap-x-10 gap-y-10 md:grid-cols-2">
-          {faqs.map((faq, index) => (
-            <div key={faq.q} data-aos="fade-up" data-aos-delay={(index % 2) * 100}>
+          {faqs.map((faq) => (
+            <div key={faq.q} id={faq.id}>
               <dt className="h4 mb-3 text-gray-100">{faq.q}</dt>
               <dd className="text-base leading-relaxed text-gray-400 sm:text-lg">{faq.a}</dd>
             </div>

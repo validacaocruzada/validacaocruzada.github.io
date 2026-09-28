@@ -5,7 +5,7 @@ const steps = [
     n: '01',
     title: 'Call',
     duration: '30 minutes · free',
-    body: 'You tell us the decision you want automated and what data you have. We tell you whether it is feasible, what we would build and roughly what it costs. No preparation needed.',
+    body: 'You tell us the decision you want automated and what data you have. We tell you whether it is feasible, what we would build and roughly what it costs. No preparation needed, and no charge.',
   },
   {
     n: '02',
@@ -32,6 +32,7 @@ const guarantees = [
   'Success criteria in plain numbers, agreed at kick-off, measured on delivery.',
   'You own everything we deliver: code, models, tests and documentation.',
   'Runs on your servers or on our cloud. Maintenance and hosting available if you want them.',
+  'We agree the acceptance test before the build. If the delivered system does not meet it on the agreed evaluation data, we keep working at our cost — or you do not pay the final milestone.',
 ]
 
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900'
@@ -43,17 +44,15 @@ export default function Process() {
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
           <h2 id="process-title" className="h2 mb-4 text-gray-100">How it works</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            One call, a written proposal the next day, a fixed-price build with a fixed end date. Maintenance if you want it. Pricing is shared after the call.
+            One call, a written proposal the next day, a fixed-price build with a fixed end date. Most builds are €5,000–€25,000 depending on data and integration scope. Scope, price and acceptance criteria are agreed in writing before work starts. Maintenance is optional.
           </p>
         </div>
 
         <ol className="mb-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-          {steps.map((step, index) => (
+          {steps.map((step) => (
             <li
               key={step.n}
               className="flex h-full flex-col rounded-2xl border border-gray-700/60 bg-gray-800 p-6 transition duration-300 motion-safe:hover:-translate-y-1 hover:border-gray-600 md:p-7"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
             >
               <div className="mb-5 font-mono text-sm font-bold tracking-widest text-purple-400">{step.n}</div>
               <h3 className="h4 mb-2 text-gray-100">{step.title}</h3>
@@ -63,7 +62,7 @@ export default function Process() {
           ))}
         </ol>
 
-        <div className="mx-auto max-w-4xl rounded-2xl border border-gray-700/60 bg-gray-800/60 p-6 md:p-8" data-aos="fade-up">
+        <div className="mx-auto max-w-4xl rounded-2xl border border-gray-700/60 bg-gray-800/60 p-6 md:p-8">
           <h3 className="h4 mb-7 text-center text-gray-100">What you can count on</h3>
           <ul className="grid gap-4 sm:grid-cols-2 sm:gap-5">
             {guarantees.map((guarantee) => (
@@ -84,6 +83,7 @@ export default function Process() {
             <a
               className={`btn bg-purple-600 text-white shadow-lg shadow-purple-900/20 hover:bg-purple-700 ${focusRing}`}
               href={BOOKING_URL}
+              data-umami-event="Book Call"
               target="_blank"
               rel="noopener noreferrer"
             >

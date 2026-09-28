@@ -12,12 +12,14 @@ const inter = Inter({
   display: 'swap'
 })
 
-const description = 'Document automation, forecasting and risk scoring, built on your data and running in weeks, as a fixed-price project.'
+const title = 'Fixed-price AI automation for operations & finance | xval.ai'
+const description = 'Automate documents, forecasts and risk decisions with a production AI system built on your data in 2–6 weeks. Fixed scope and price.'
+const socialTitle = 'Automate manual decisions in 2–6 weeks'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xval.ai'),
   title: {
-    default: 'xval.ai — Machine learning, data science & AI, delivered as a fixed-price project',
+    default: title,
     template: '%s · xval.ai'
   },
   description,
@@ -32,13 +34,13 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://xval.ai',
     siteName: 'xval.ai',
-    title: 'xval.ai — Machine learning, data science & AI, delivered as a fixed-price project',
+    title: socialTitle,
     description,
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'xval.ai — Machine learning, data science & AI, delivered as a fixed-price project' }]
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: socialTitle }]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'xval.ai — Machine learning, data science & AI, delivered as a fixed-price project',
+    title: socialTitle,
     description,
     images: ['/og.png']
   }
