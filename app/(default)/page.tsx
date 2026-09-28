@@ -6,7 +6,7 @@ import Process from '@/components/process'
 import Cta from '@/components/cta'
 import Faq from '@/components/faq'
 
-const title = 'Fixed-price AI automation for operations & finance | xval.ai'
+const title = 'Fixed-price AI systems built on your data | xval.ai'
 const description = 'Automate documents, forecasts and risk decisions with a production AI system built on your data in 2–6 weeks. Fixed scope and price. Book a free call.'
 const socialTitle = 'Automate manual decisions in 2–6 weeks'
 const socialDescription = 'Fixed-price AI systems for document workflows, forecasting and risk decisions — built on your data and delivered into production.'

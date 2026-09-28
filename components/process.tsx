@@ -1,38 +1,46 @@
 import { BOOKING_URL } from '@/components/links'
+import { Icon, IconTile, type IconName } from '@/components/icons'
 
-const steps = [
+const steps: { n: string; icon: IconName; title: string; duration: string; body: string }[] = [
   {
     n: '01',
+    icon: 'phone',
     title: 'Call',
     duration: '30 minutes · free',
     body: 'You tell us the decision you want automated and what data you have. We tell you whether it is feasible, what we would build and roughly what it costs. No preparation needed, and no charge.',
   },
   {
     n: '02',
+    icon: 'clipboard',
     title: 'Proposal',
     duration: 'Within 24 hours',
     body: 'A written proposal: the data we need, the success criteria in plain numbers, the timeline and a fixed price. You sign off before anything is built.',
   },
   {
     n: '03',
+    icon: 'code',
     title: 'Build',
     duration: '2–6 weeks · fixed price',
     body: 'We connect to your data, build the model and deliver the results where your team works: an API your systems call or a dashboard your people open. The build ends with a results presentation against the success criteria and a handover of everything we made.',
   },
   {
     n: '04',
+    icon: 'refresh',
     title: 'Maintain',
     duration: 'Monthly · optional · cancel anytime',
     body: 'We host, monitor and keep the system accurate: drift checks, retraining with new data, fixes and new features as your business changes. Or your team runs it; the choice is yours.',
   },
 ]
 
-const guarantees = [
-  'Fixed scope and fixed price, agreed in writing before we start.',
-  'Success criteria in plain numbers, agreed at kick-off, measured on delivery.',
-  'You own everything we deliver: code, models, tests and documentation.',
-  'Runs on your servers or on our cloud. Maintenance and hosting available if you want them.',
-  'We agree the acceptance test before the build. If the delivered system does not meet it on the agreed evaluation data, we keep working at our cost — or you do not pay the final milestone.',
+const guarantees: { icon: IconName; text: string }[] = [
+  { icon: 'tag', text: 'Fixed scope and fixed price, agreed in writing before we start.' },
+  { icon: 'target', text: 'Success criteria in plain numbers, agreed at kick-off, measured on delivery.' },
+  { icon: 'key', text: 'You own everything we deliver: code, models, tests and documentation.' },
+  { icon: 'server', text: 'Runs on your servers or on our cloud. Maintenance and hosting available if you want them.' },
+  {
+    icon: 'scale',
+    text: 'We agree the acceptance test before the build. If the delivered system does not meet it on the agreed evaluation data, we keep working at our cost — or you do not pay the final milestone.',
+  },
 ]
 
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900'
@@ -54,7 +62,10 @@ export default function Process() {
               key={step.n}
               className="flex h-full flex-col rounded-2xl border border-gray-700/60 bg-gray-800 p-6 transition duration-300 motion-safe:hover:-translate-y-1 hover:border-gray-600 md:p-7"
             >
-              <div className="mb-5 font-mono text-sm font-bold tracking-widest text-purple-400">{step.n}</div>
+              <div className="mb-5 flex items-center justify-between">
+                <IconTile name={step.icon} className="h-12 w-12" />
+                <span className="font-mono text-sm font-bold tracking-widest text-purple-400">{step.n}</span>
+              </div>
               <h3 className="h4 mb-2 text-gray-100">{step.title}</h3>
               <div className="mb-4 text-sm font-bold text-purple-300">{step.duration}</div>
               <p className="text-base leading-relaxed text-gray-400 sm:text-lg">{step.body}</p>
@@ -66,16 +77,14 @@ export default function Process() {
           <h3 className="h4 mb-7 text-center text-gray-100">What you can count on</h3>
           <ul className="grid gap-4 sm:grid-cols-2 sm:gap-5">
             {guarantees.map((guarantee) => (
-              <li key={guarantee} className="flex items-start text-base leading-relaxed text-gray-300 sm:text-lg">
-                <svg
-                  className="mr-3 mt-1.5 h-4 w-4 shrink-0 fill-current text-purple-400"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
+              <li key={guarantee.text} className="flex items-start text-base leading-relaxed text-gray-300 sm:text-lg">
+                <span
+                  className="mr-4 mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-purple-500/20 bg-purple-600/15 text-purple-300"
                   aria-hidden="true"
                 >
-                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                </svg>
-                <span>{guarantee}</span>
+                  <Icon name={guarantee.icon} className="h-5 w-5" />
+                </span>
+                <span>{guarantee.text}</span>
               </li>
             ))}
           </ul>

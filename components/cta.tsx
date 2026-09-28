@@ -1,6 +1,13 @@
 import { BOOKING_URL, CONTACT_EMAIL } from '@/components/links'
+import { Icon, type IconName } from '@/components/icons'
 
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100'
+
+const assurances: { icon: IconName; label: string }[] = [
+  { icon: 'sparkles', label: 'No preparation' },
+  { icon: 'clock', label: 'Straight answer in 30 minutes' },
+  { icon: 'clipboard', label: 'Written proposal within 24 hours' },
+]
 
 export default function Cta() {
   return (
@@ -26,10 +33,15 @@ export default function Cta() {
                 Book a free 30-min call
               </a>
             </div>
+            <ul className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-medium text-gray-700">
+              {assurances.map((item) => (
+                <li key={item.label} className="flex items-center gap-2">
+                  <Icon name={item.icon} className="h-5 w-5 text-purple-600" />
+                  {item.label}
+                </li>
+              ))}
+            </ul>
             <p className="mt-6 text-sm text-gray-600">
-              No preparation · Straight answer in 30 minutes · Written proposal within 24 hours
-            </p>
-            <p className="mt-2 text-sm text-gray-600">
               30 minutes with Pedro Marcelino, founder. No sales hand-off.
             </p>
             <p className="mt-2 text-sm text-gray-600">

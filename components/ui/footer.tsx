@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <Image src={Logo} alt="xval.ai" className="h-6 w-auto" />
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-gray-400">
-              Founder-led AI and data-science consultancy in Portugal. Fixed-price systems for operations and finance teams.
+              Founder-led AI and data-science consultancy in Portugal. Fixed-price AI systems, built on your data and delivered into production.
             </p>
           </div>
 

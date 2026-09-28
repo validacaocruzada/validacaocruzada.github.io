@@ -1,15 +1,20 @@
-const services = [
+import { IconTile, type IconName } from '@/components/icons'
+
+const services: { icon: IconName; title: string; body: string; examples: string[] }[] = [
   {
+    icon: 'document',
     title: 'Document & back-office automation',
     body: 'Invoices, contracts, claims, emails, tickets. AI reads them, extracts what matters, classifies, routes and answers, with a human in the loop where it counts.',
     examples: ['Extraction and classification of documents', 'Assistants over your internal knowledge', 'Automated processing of repetitive workflows'],
   },
   {
+    icon: 'chart',
     title: 'Forecasting & planning',
     body: 'Replace the spreadsheet and the gut feel with a model that forecasts from your history and updates itself. Better numbers for stock, staffing, pricing and cash.',
     examples: ['Demand, sales and revenue forecasting', 'Stock and capacity planning', 'Pricing and promotion impact'],
   },
   {
+    icon: 'shield',
     title: 'Classification & risk scoring',
     body: 'Your team already knows what a good or bad case looks like. We train a model on their past decisions so every new case gets a score automatically. Your team reviews only the uncertain ones.',
     examples: ['Credit, churn and default risk', 'Fraud in traffic, accounts and transactions', 'Anomalies in sensors, operations and billing'],
@@ -33,7 +38,7 @@ export default function Features() {
               key={service.title}
               className="group relative flex h-full flex-col rounded-2xl border border-gray-700/60 bg-gray-800 p-6 transition duration-300 motion-safe:hover:-translate-y-1 hover:border-gray-600 md:p-7"
             >
-              <div className="mb-5 h-1 w-10 rounded-full bg-purple-600 transition-all duration-300 group-hover:w-16" aria-hidden="true" />
+              <IconTile name={service.icon} className="mb-5 h-12 w-12 transition duration-300 group-hover:border-purple-400/40 group-hover:bg-purple-600/25" />
               <h3 className="h4 mb-3 text-gray-100">{service.title}</h3>
               <p className="mb-6 text-base leading-relaxed text-gray-400 sm:text-lg">{service.body}</p>
               <ul className="mt-auto space-y-3 text-sm leading-relaxed text-gray-300 sm:text-base">

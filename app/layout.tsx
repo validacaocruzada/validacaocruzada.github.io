@@ -12,7 +12,7 @@ const inter = Inter({
   display: 'swap'
 })
 
-const title = 'Fixed-price AI automation for operations & finance | xval.ai'
+const title = 'Fixed-price AI systems built on your data | xval.ai'
 const description = 'Automate documents, forecasts and risk decisions with a production AI system built on your data in 2–6 weeks. Fixed scope and price.'
 const socialTitle = 'Automate manual decisions in 2–6 weeks'
 

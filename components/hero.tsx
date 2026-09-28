@@ -1,6 +1,13 @@
 import { BOOKING_URL, CONTACT_EMAIL } from '@/components/links'
+import { Icon, type IconName } from '@/components/icons'
 
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900'
+
+const highlights: { icon: IconName; label: string }[] = [
+  { icon: 'clock', label: '2–6 weeks to production' },
+  { icon: 'tag', label: 'Fixed scope, fixed price' },
+  { icon: 'key', label: 'You own the code' },
+]
 
 export default function Hero() {
   return (
@@ -11,7 +18,7 @@ export default function Hero() {
         <div className="pb-16 pt-32 md:pb-24 md:pt-44">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-5 text-xs font-bold uppercase tracking-widest text-purple-400 sm:text-sm">
-              Fixed-price AI systems for operations &amp; finance teams
+              Fixed-price AI systems, built on your data
             </div>
             <h1 id="hero-title" className="h1 mb-6 text-gray-100">
               Automate the decisions your team makes by hand.
@@ -31,8 +38,16 @@ export default function Hero() {
                 Book a free 30-min call
               </a>
             </div>
+            <ul className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-medium text-gray-300">
+              {highlights.map((item) => (
+                <li key={item.label} className="flex items-center gap-2">
+                  <Icon name={item.icon} className="h-5 w-5 text-purple-400" />
+                  {item.label}
+                </li>
+              ))}
+            </ul>
 
-            <p className="mt-6 text-sm leading-relaxed text-gray-400">
+            <p className="mt-8 text-sm leading-relaxed text-gray-400">
               Free, 30 minutes, no preparation. You leave with what we would build, how long it takes and an indicative price &mdash; or a straight “not a fit”.
             </p>
             <p className="mt-3 text-sm text-gray-400">
