@@ -9,15 +9,21 @@ const services: { icon: IconName; title: string; body: string; examples: string[
   },
   {
     icon: 'chart',
-    title: 'Forecasting & planning',
-    body: 'Replace the spreadsheet and the gut feel with a model that forecasts from your history and updates itself. Better numbers for stock, staffing, pricing and cash.',
-    examples: ['Demand, sales and revenue forecasting', 'Stock and capacity planning', 'Pricing and promotion impact'],
+    title: 'Forecasting: how much, and when',
+    body: 'How many units will sell next month? How many people do we need on Saturday? When does cash get tight? Today someone answers these in a spreadsheet. We build a model on your history that answers them every week, automatically.',
+    examples: ['Next month’s demand, per product and per site', 'Staff and stock levels, per week', 'Which promotions and price changes actually moved sales'],
   },
   {
     icon: 'shield',
-    title: 'Classification & risk scoring',
-    body: 'Your team already knows what a good or bad case looks like. We train a model on their past decisions so every new case gets a score automatically. Your team reviews only the uncertain ones.',
-    examples: ['Credit, churn and default risk', 'Fraud in traffic, accounts and transactions', 'Anomalies in sensors, operations and billing'],
+    title: 'Sorting and flagging cases',
+    body: 'Which of these 500 applications should we look at first? Which customers are about to leave? Which transactions look wrong? Your team makes these calls today. We train a model on their past decisions, and they review only the doubtful cases.',
+    examples: ['Customers likely to churn or default', 'Invoices, claims and orders that look wrong', 'Leads worth a call'],
+  },
+  {
+    icon: 'academic-cap',
+    title: 'Training for your team',
+    body: 'Half-day to two-day sessions for the people who will use AI at work: what it can and cannot do, how to use it safely with company data, and how to spot the tasks in your own operation that are worth automating.',
+    examples: ['Fundamentals for managers and teams, no maths required', 'Hands-on, with your own documents and data', 'Finding and prioritising quick wins in your operation'],
   },
 ]
 
@@ -26,13 +32,13 @@ export default function Features() {
     <section id="services" aria-labelledby="services-title">
       <div className="max-w-6xl mx-auto border-t border-gray-800/80 px-4 py-16 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-          <h2 id="services-title" className="h2 mb-4 text-gray-100">What we build</h2>
+          <h2 id="services-title" className="h2 mb-4 text-gray-100">What we do</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            Working systems, not slide decks. Every project ends with a model running on your data, wired into your operation.
+            Three kinds of systems, delivered running on your data. Plus training, so your team can use them and find the next ones.
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-sm items-stretch gap-6 md:max-w-none md:grid-cols-3 lg:gap-8">
+        <div className="mx-auto grid max-w-sm items-stretch gap-6 md:max-w-none md:grid-cols-2 lg:gap-8">
           {services.map((service) => (
             <article
               key={service.title}
