@@ -1,29 +1,25 @@
 import { IconTile, type IconName } from '@/components/icons'
 
-const services: { icon: IconName; title: string; body: string; examples: string[] }[] = [
+const services: { icon: IconName; title: string; body: string }[] = [
   {
     icon: 'document',
     title: 'Document & back-office automation',
     body: 'Invoices, contracts, claims, emails, tickets. AI reads them, extracts what matters, classifies, routes and answers, with a human in the loop where it counts.',
-    examples: ['Extraction and classification of documents', 'Assistants over your internal knowledge', 'Automated processing of repetitive workflows'],
   },
   {
     icon: 'chart',
     title: 'Forecasting: how much, and when',
     body: 'How many units will sell next month? How many people do we need on Saturday? When does cash get tight? Today someone answers these in a spreadsheet. We build a model on your history that answers them every week, automatically.',
-    examples: ['Next month’s demand, per product and per site', 'Staff and stock levels, per week', 'Which promotions and price changes actually moved sales'],
   },
   {
     icon: 'shield',
     title: 'Sorting and flagging cases',
     body: 'Which of these 500 applications should we look at first? Which customers are about to leave? Which transactions look wrong? Your team makes these calls today. We train a model on their past decisions, and they review only the doubtful cases.',
-    examples: ['Customers likely to churn or default', 'Invoices, claims and orders that look wrong', 'Leads worth a call'],
   },
   {
     icon: 'academic-cap',
     title: 'Training for your team',
     body: 'Half-day to two-day sessions for the people who will use AI at work: what it can and cannot do, how to use it safely with company data, and how to spot the tasks in your own operation that are worth automating.',
-    examples: ['Fundamentals for managers and teams, no maths required', 'Hands-on, with your own documents and data', 'Finding and prioritising quick wins in your operation'],
   },
 ]
 
@@ -46,22 +42,7 @@ export default function Features() {
             >
               <IconTile name={service.icon} className="mb-5 h-12 w-12 transition duration-300 group-hover:border-purple-400/40 group-hover:bg-purple-600/25" />
               <h3 className="h4 mb-3 text-gray-100">{service.title}</h3>
-              <p className="mb-6 text-base leading-relaxed text-gray-400 sm:text-lg">{service.body}</p>
-              <ul className="mt-auto space-y-3 text-sm leading-relaxed text-gray-300 sm:text-base">
-                {service.examples.map((example) => (
-                  <li key={example} className="flex items-start">
-                    <svg
-                      className="mr-3 mt-1.5 h-3 w-3 shrink-0 fill-current text-purple-400"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                    >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
-                    <span>{example}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="text-base leading-relaxed text-gray-400 sm:text-lg">{service.body}</p>
             </article>
           ))}
         </div>
