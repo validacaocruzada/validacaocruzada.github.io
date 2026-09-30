@@ -54,7 +54,7 @@ export default function QuickWins() {
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
           <h2 id="quick-wins-title" className="h2 mb-4 text-gray-100">Where companies usually start</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            Low complexity, high impact. The kind of project that is done in days or weeks, not quarters.
+            Low complexity, high impact. One clear operational need, one working system.
           </p>
         </div>
 

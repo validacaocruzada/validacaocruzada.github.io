@@ -5,26 +5,19 @@ const steps: { n: string; icon: IconName; title: string; duration: string; body:
   {
     n: '01',
     icon: 'phone',
-    title: 'Call',
-    duration: '30 minutes · free',
-    body: 'You tell us the decision you want automated and what data you have. We tell you whether it is feasible, what we would build and roughly what it costs. No preparation needed, and no charge.',
+    title: 'Call & proposal',
+    duration: 'Free call · proposal in 24 hours',
+    body: 'You tell us the decision you want automated and what data you have; we tell you whether it is feasible. The next day you get a written proposal: the data we need, the success criteria in plain numbers, the timeline and a fixed price. You sign off before anything is built.',
   },
   {
     n: '02',
-    icon: 'clipboard',
-    title: 'Proposal',
-    duration: 'Within 24 hours',
-    body: 'A written proposal: the data we need, the success criteria in plain numbers, the timeline and a fixed price. You sign off before anything is built.',
-  },
-  {
-    n: '03',
     icon: 'code',
     title: 'Build',
     duration: '2–6 weeks · fixed price',
     body: 'We connect to your data, build the model and deliver the results where your team works: an API your systems call or a dashboard your people open. The build ends with a results presentation against the success criteria and a handover of everything we made.',
   },
   {
-    n: '04',
+    n: '03',
     icon: 'refresh',
     title: 'Maintain',
     duration: 'Monthly · optional · cancel anytime',
@@ -56,7 +49,7 @@ export default function Process() {
           </p>
         </div>
 
-        <ol className="mb-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <ol className="mb-16 grid gap-6 md:grid-cols-3 lg:gap-8">
           {steps.map((step) => (
             <li
               key={step.n}
