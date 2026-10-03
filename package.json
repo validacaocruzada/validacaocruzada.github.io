@@ -1,5 +1,5 @@
 {
-  "name": "open-pro-next",
+  "name": "xval-landing-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
@@ -19,7 +18,6 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.7",
     "autoprefixer": "^10.4.16",
     "gh-pages": "^6.1.0",
     "postcss": "^8.4.32",
