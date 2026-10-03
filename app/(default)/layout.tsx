@@ -9,7 +9,7 @@ export default function DefaultLayout({
 }) {
   return (
     <>
-      <main className="grow">
+      <main id="main-content" tabIndex={-1} className="grow focus:outline-none">
 
         <PageIllustration />
 

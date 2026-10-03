@@ -4,7 +4,7 @@ import { Icon, type IconName } from '@/components/icons'
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900'
 
 const highlights: { icon: IconName; label: string }[] = [
-  { icon: 'clock', label: '2–6 weeks to production' },
+  { icon: 'clock', label: '1-week assessment · 2–6-week builds' },
   { icon: 'tag', label: 'Fixed scope, fixed price' },
   { icon: 'key', label: 'You own the code' },
 ]
@@ -18,13 +18,13 @@ export default function Hero() {
         <div className="pb-16 pt-32 md:pb-24 md:pt-44">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-5 text-xs font-bold uppercase tracking-widest text-purple-400 sm:text-sm">
-              Fixed-price AI systems, built on your data
+              AI consulting and software development
             </div>
             <h1 id="hero-title" className="h1 mb-6 text-gray-100">
-              Automate the decisions your team makes by hand.
+              Decide what to build with AI. Then we build it.
             </h1>
             <p className="mx-auto mb-9 max-w-3xl text-lg leading-relaxed text-gray-400 sm:text-xl">
-              We build a production system on your data in 2&ndash;6 weeks, agree success metrics and a fixed price before work starts, and hand over the code.
+              We tell you which parts of your operation are worth automating with machine learning and language models, then design, build and deliver the application into production. Fixed scope, fixed price, agreed before work starts. You own the code.
             </p>
 
             <div className="flex justify-center">
@@ -35,7 +35,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Book a free 30-min call
+                Book a free 30-minute call
               </a>
             </div>
             <ul className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm font-medium text-gray-300">
@@ -48,7 +48,7 @@ export default function Hero() {
             </ul>
 
             <p className="mt-8 text-sm leading-relaxed text-gray-400">
-              Free, 30 minutes, no preparation. You leave with what we would build, how long it takes and an indicative price &mdash; or a straight “not a fit”.
+              Free, 30 minutes, no preparation. You leave knowing whether your case is clear enough for a proposal, needs a one-week assessment first, or is not a fit.
             </p>
             <p className="mt-3 text-sm text-gray-400">
               Prefer email?{' '}

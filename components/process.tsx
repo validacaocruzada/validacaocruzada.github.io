@@ -1,25 +1,25 @@
-import { BOOKING_URL } from '@/components/links'
+import { ASSESSMENT_CREDIT_WINDOW, ASSESSMENT_DURATION, ASSESSMENT_PRICE, BOOKING_URL, BUILD_PRICE_RANGE } from '@/components/links'
 import { Icon, IconTile, type IconName } from '@/components/icons'
 
 const steps: { n: string; icon: IconName; title: string; duration: string; body: string }[] = [
   {
     n: '01',
     icon: 'phone',
-    title: 'Call & proposal',
-    duration: 'Free call · proposal in 24 hours',
-    body: 'You tell us the decision you want automated and what data you have; we tell you whether it is feasible. The next day you get a written proposal: the data we need, the success criteria in plain numbers, the timeline and a fixed price. You sign off before anything is built.',
+    title: 'Assess',
+    duration: `Free call · ${ASSESSMENT_DURATION} assessment when needed`,
+    body: `On the call you describe the task and the data; we say whether it is feasible. If the case is clear, you get a written proposal within a business day. If it is not, we run a ${ASSESSMENT_DURATION} assessment: data audit, ranked candidates, build-or-buy per candidate, a go/no-go and the proposal. Nothing is built before you sign off.`,
   },
   {
     n: '02',
     icon: 'code',
     title: 'Build',
     duration: '2–6 weeks · fixed price',
-    body: 'We connect to your data, build the model and deliver the results where your team works: an API your systems call or a dashboard your people open. The build ends with a results presentation against the success criteria and a handover of everything we made.',
+    body: 'We connect to your data, design the architecture, build the application and deliver it where your team works: your ERP or line-of-business system, your product, a service your systems call, or a dashboard. The build ends with results against the acceptance test and a handover of everything we made.',
   },
   {
     n: '03',
     icon: 'refresh',
-    title: 'Maintain',
+    title: 'Operate',
     duration: 'Monthly · optional · cancel anytime',
     body: 'We host, monitor and keep the system accurate: drift checks, retraining with new data, fixes and new features as your business changes. Or your team runs it; the choice is yours.',
   },
@@ -27,12 +27,13 @@ const steps: { n: string; icon: IconName; title: string; duration: string; body:
 
 const guarantees: { icon: IconName; text: string }[] = [
   { icon: 'tag', text: 'Fixed scope and fixed price, agreed in writing before we start.' },
-  { icon: 'target', text: 'Success criteria in plain numbers, agreed at kick-off, measured on delivery.' },
-  { icon: 'key', text: 'You own everything we deliver: code, models, tests and documentation.' },
+  { icon: 'target', text: 'Acceptance test in plain numbers, agreed before the build, measured on delivery.' },
+  { icon: 'key', text: 'You own everything we create: code, models we train, prompts, tests and documentation. Third-party models stay under their own licences; your data stays yours.' },
+  { icon: 'clipboard', text: 'Assessment deliverables are yours and written so any supplier could act on them.' },
   { icon: 'server', text: 'Runs on your servers or on our cloud. Maintenance and hosting available if you want them.' },
   {
     icon: 'scale',
-    text: 'We agree the acceptance test before the build. If the delivered system does not meet it on the agreed evaluation data, we keep working at our cost — or you do not pay the final milestone.',
+    text: 'If the delivered system does not meet the acceptance test on the agreed evaluation data, we keep working at our cost — or you do not pay the final milestone.',
   },
 ]
 
@@ -40,12 +41,12 @@ const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-pu
 
 export default function Process() {
   return (
-    <section id="how-we-work" aria-labelledby="process-title">
+    <section id="how-we-work" className="scroll-mt-20" aria-labelledby="process-title">
       <div className="max-w-6xl mx-auto border-t border-gray-800/80 px-4 py-16 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
           <h2 id="process-title" className="h2 mb-4 text-gray-100">How it works</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            One call, a written proposal the next day, a fixed-price build with a fixed end date. Most builds are €5,000–€25,000 depending on data and integration scope. Scope, price and acceptance criteria are agreed in writing before work starts. Maintenance is optional.
+            One call, then either a proposal or a {ASSESSMENT_DURATION} assessment, then a fixed-price build with a fixed end date. Assessments are {ASSESSMENT_PRICE}, credited once against a build that starts within {ASSESSMENT_CREDIT_WINDOW}. Most builds are {BUILD_PRICE_RANGE} depending on data and integration scope. Maintenance is optional.
           </p>
         </div>
 
@@ -89,7 +90,7 @@ export default function Process() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book a free 30-min call
+              Book a free 30-minute call
             </a>
           </div>
         </div>

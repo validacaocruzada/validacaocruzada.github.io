@@ -33,6 +33,12 @@ export default function Header() {
                 How it works
               </a>
               <a
+                href="/#engineering"
+                className={`rounded-sm text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
+              >
+                Engineering
+              </a>
+              <a
                 href="/#faq"
                 className={`rounded-sm text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
               >
@@ -46,7 +52,9 @@ export default function Header() {
               rel="noopener noreferrer"
               className={`btn-sm whitespace-nowrap bg-purple-600 text-white shadow-lg shadow-purple-900/20 hover:bg-purple-700 ${focusRing}`}
             >
-              Book a free 30-min call
+              {/* Full label overflows a 360 px viewport next to the logo; short form below `sm`. */}
+              <span className="sm:hidden">Book a free call</span>
+              <span className="hidden sm:inline">Book a free 30-minute call</span>
             </a>
           </div>
         </div>

@@ -7,7 +7,7 @@ type QuickWin = {
   body: string
 }
 
-// Low-complexity, high-impact use cases, by sector.
+// Example first builds, by sector. Mostly language-model work needing no training history.
 const wins: QuickWin[] = [
   {
     icon: 'inbox',
@@ -34,27 +34,27 @@ const wins: QuickWin[] = [
     body: 'Descriptions written and translated from the data already in the ERP, in the brand’s tone. The merchandising lead approves before anything goes live.',
   },
   {
-    icon: 'magnifying-glass',
-    sector: 'Engineering services',
-    title: 'Market watch and prospect lists',
-    body: 'An agent follows publications and projects in the company’s field, qualifies the ones that match its expertise and adds them to a lead list for sales.',
-  },
-  {
     icon: 'chat-bubble',
     sector: 'Print & packaging',
     title: 'Ask your project system a question',
     body: 'Thousands of projects, versions and proofs in a bespoke tool. Staff ask in plain language and get the right record, version or history back.',
   },
+  {
+    icon: 'code',
+    sector: 'Software & fintech',
+    title: 'Transaction categorisation inside the product',
+    body: 'A categorisation service in the company’s own codebase, with an evaluation set the team reruns on every release. Customers see categories; engineers see the metric.',
+  },
 ]
 
 export default function QuickWins() {
   return (
-    <section id="quick-wins" aria-labelledby="quick-wins-title">
+    <section id="quick-wins" className="scroll-mt-20" aria-labelledby="quick-wins-title">
       <div className="max-w-6xl mx-auto border-t border-gray-800/80 px-4 py-16 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-          <h2 id="quick-wins-title" className="h2 mb-4 text-gray-100">Where companies usually start</h2>
+          <h2 id="quick-wins-title" className="h2 mb-4 text-gray-100">Example first builds</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            Low complexity, high impact. One clear operational need, one working system.
+            Not every project needs a model trained on years of history. Many first builds use language models to read, write or search what the company already has. One clear operational need, one working system.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function QuickWins() {
             >
               <div className="mb-5 flex items-center justify-between gap-4">
                 <IconTile name={win.icon} className="h-11 w-11" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">{win.sector}</span>
+                <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">{win.sector}</span>
               </div>
               <h3 className="mb-2 text-lg font-bold leading-snug text-gray-100">{win.title}</h3>
               <p className="text-base leading-relaxed text-gray-400">{win.body}</p>

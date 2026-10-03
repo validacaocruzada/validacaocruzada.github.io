@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <Image src={Logo} alt="xval.ai" className="h-6 w-auto" />
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-gray-400">
-              Founder-led AI and data-science consultancy in Portugal. Fixed-price AI systems, built on your data and delivered into production.
+              AI consulting and software development from Portugal. Fixed-fee assessments, fixed-price builds delivered into production, code you own.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className={`rounded-sm text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
             >
-              Book a free 30-min call
+              Book a free 30-minute call
             </a>
             <a
               href="/#data-protection"
