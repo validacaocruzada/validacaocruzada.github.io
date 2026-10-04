@@ -7,7 +7,7 @@ const advise: Offer[] = [
   {
     icon: 'magnifying-glass',
     title: 'AI assessment',
-    body: `${ASSESSMENT_DURATION}, ${ASSESSMENT_PRICE}, credited against a build that starts within ${ASSESSMENT_CREDIT_WINDOW}. We go through your operation and your data and come back with a ranked list of what is worth automating, what to buy instead of build, what to leave alone, and a fixed-price proposal for the first build.`,
+    body: `${ASSESSMENT_DURATION}, ${ASSESSMENT_PRICE}, credited against a build that starts within ${ASSESSMENT_CREDIT_WINDOW}. We go through your operation and your data and come back with a ranked list of what is worth automating, what to buy instead of build, which subscriptions a fixed-price build would replace with the numbers side by side, what to leave alone, and a proposal for the first build.`,
   },
   {
     icon: 'check-badge',
@@ -33,9 +33,9 @@ const build: Offer[] = [
     body: 'How many units will sell, how many people are needed on Saturday, which of 500 applications to look at first, which customers are about to leave. Models trained on your history, answering every week automatically.',
   },
   {
-    icon: 'chat-bubble',
-    title: 'Search and assistants over company data',
-    body: 'Thousands of projects, records, manuals or tickets in your systems. Staff ask in plain language and get the right record, version or answer back, with the source attached.',
+    icon: 'package',
+    title: 'Replace a subscription with software you own',
+    body: 'If your team uses only a small, stable part of an expensive tool, we assess whether rebuilding that workflow pays. When it does, we build that part: your data model, your workflow, AI where it helps, connected to your systems. Delivered in weeks for a fixed price; after migration and acceptance you can retire or reduce the subscription. Not a copy of the product: the part of the job your team does, built around how you do it.',
   },
   {
     icon: 'code',
