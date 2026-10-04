@@ -18,7 +18,7 @@ export const UMAMI_WEBSITE_ID = '3d8582be-744e-47ca-9fd5-540af09aa2f7'
 // Metadata shared by app/layout.tsx (defaults) and app/(default)/page.tsx (home).
 export const SITE_TITLE = 'AI consulting and software development, fixed price | xval.ai'
 export const SITE_DESCRIPTION =
-  'We help you decide what is worth building with AI, then build it: document pipelines, forecasting, tools that replace subscriptions, AI features in your product. Fixed scope and price, delivered in 2–6 weeks.'
+  'We help you decide where AI fits, then build it: data pipelines, dashboards and metrics, machine learning models, training for your team. Fixed scope and price, delivered in 2–6 weeks.'
 export const SOCIAL_TITLE = 'Decide what to build with AI. Then we build it.'
 export const SOCIAL_DESCRIPTION =
   'AI consulting and software development from Portugal. Fixed-fee assessment, fixed-price builds in 2–6 weeks, you own the code.'

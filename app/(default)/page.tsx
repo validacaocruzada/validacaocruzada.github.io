@@ -4,7 +4,7 @@ import Hero from '@/components/hero'
 import Features from '@/components/features'
 import QuickWins from '@/components/quick-wins'
 import Process from '@/components/process'
-import Engineering from '@/components/engineering'
+import Founder from '@/components/founder'
 import Cta from '@/components/cta'
 import Faq from '@/components/faq'
 import { SITE_URL } from '@/components/links'
@@ -21,7 +21,7 @@ export default function Home() {
       <Features />
       <QuickWins />
       <Process />
-      <Engineering />
+      <Founder />
       <Faq />
       <Cta />
     </>

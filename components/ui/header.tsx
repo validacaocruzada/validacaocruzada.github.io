@@ -33,12 +33,6 @@ export default function Header() {
                 How it works
               </a>
               <a
-                href="/#engineering"
-                className={`rounded-sm text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
-              >
-                Engineering
-              </a>
-              <a
                 href="/#faq"
                 className={`rounded-sm text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
               >

@@ -1,4 +1,3 @@
-import { ASSESSMENT_CREDIT_WINDOW, ASSESSMENT_DURATION, ASSESSMENT_PRICE } from '@/components/links'
 import { Icon, IconTile, type IconName } from '@/components/icons'
 
 type Offer = { icon: IconName; title: string; body: string }
@@ -6,13 +5,8 @@ type Offer = { icon: IconName; title: string; body: string }
 const advise: Offer[] = [
   {
     icon: 'magnifying-glass',
-    title: 'AI assessment',
-    body: `${ASSESSMENT_DURATION}, ${ASSESSMENT_PRICE}, credited against a build that starts within ${ASSESSMENT_CREDIT_WINDOW}. We go through your operation and your data and come back with a ranked list of what is worth automating, what to buy instead of build, which subscriptions a fixed-price build would replace with the numbers side by side, what to leave alone, and a proposal for the first build.`,
-  },
-  {
-    icon: 'check-badge',
-    title: 'Review of an existing AI project',
-    body: 'A pilot that stalled, a tool that was bought and not adopted, or a system another supplier built. We tell you whether it can reach production, what it would take, and whether it is worth it.',
+    title: 'Discovery session',
+    body: 'A working session with your team: how the work is done today, where the hours go, what data you already have. You leave with a short list of tasks worth automating with AI, what each would take, and a proposal for the first one.',
   },
   {
     icon: 'academic-cap',
@@ -23,24 +17,19 @@ const advise: Offer[] = [
 
 const build: Offer[] = [
   {
-    icon: 'document',
-    title: 'Document and workflow applications',
-    body: 'Invoices, contracts, claims, supplier files, emails, tickets. Language models read them, extract what matters, classify, route and answer, with a person in the loop where the decision matters.',
+    icon: 'database',
+    title: 'Data pipelines and ETL',
+    body: 'Getting data out of the ERP, CRM, spreadsheets and files into one place you can rely on: pipelines that run on schedule, databases enriched from external sources, deduplication and validation so the numbers agree with each other.',
   },
   {
     icon: 'chart',
-    title: 'Forecasting and prioritisation',
-    body: 'How many units will sell, how many people are needed on Saturday, which of 500 applications to look at first, which customers are about to leave. Models trained on your history, answering every week automatically.',
+    title: 'Dashboards and metrics',
+    body: 'The metrics the business runs on, defined once and kept current: dashboards your team opens every morning, analysis of what moved and why, answers to specific questions from your own data.',
   },
   {
-    icon: 'package',
-    title: 'Replace a subscription with software you own',
-    body: 'If your team uses only a small, stable part of an expensive tool, we assess whether rebuilding that workflow pays. When it does, we build that part: your data model, your workflow, AI where it helps, connected to your systems. Delivered in weeks for a fixed price; after migration and acceptance you can retire or reduce the subscription. Not a copy of the product: the part of the job your team does, built around how you do it.',
-  },
-  {
-    icon: 'code',
-    title: 'AI features inside your product',
-    body: 'Classification, extraction, recommendations or an assistant inside the software you sell. We work in your repository, follow your conventions and ship behind your feature flags, with evaluation data your team can rerun.',
+    icon: 'sparkles',
+    title: 'Machine learning models',
+    body: 'Models trained on your history: forecast demand, score leads, flag risk, decide which cases to look at first. Built against a baseline and an evaluation set, delivered running inside your systems, answering every week without anyone asking.',
   },
 ]
 
@@ -73,19 +62,19 @@ export default function Features() {
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
           <h2 id="services-title" className="h2 mb-4 text-gray-100">What we do</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            Two kinds of work. Advice on what to build, buy or leave alone; and the build itself, delivered running in your systems.
+            Two kinds of work. Advice on where AI fits and how your team uses it; and the build itself, delivered running in your systems.
           </p>
         </div>
 
         <div className="space-y-14">
-          <Track id="advise-title" label="Advise" items={advise} cols="md:grid-cols-3" />
-          <Track id="build-title" label="Build" items={build} cols="md:grid-cols-2" />
+          <Track id="advise-title" label="Advise" items={advise} cols="md:grid-cols-2" />
+          <Track id="build-title" label="Build" items={build} cols="md:grid-cols-3" />
         </div>
 
         <p className="mx-auto mt-10 flex max-w-3xl items-start justify-center gap-3 text-center text-base leading-relaxed text-gray-400 sm:text-lg">
           <Icon name="arrow-right" className="mt-1 h-5 w-5 shrink-0 text-purple-400 sm:mt-1.5" />
           <span>
-            One clear, scoped workflow goes straight to a fixed-price proposal. Several candidates, an open question, or a stalled pilot go through the assessment first. When the agreed build needs a pipeline or dashboard to run, it is included in the fixed scope.
+            One clear, scoped workflow goes straight to a fixed-price proposal. Several candidates, an open question, or a stalled pilot go through the assessment first.
           </span>
         </p>
       </div>
