@@ -15,7 +15,7 @@ npm run build    # static export to out/
 ## Where things live
 
 - `app/(default)/page.tsx` — section order and home metadata; `app/(default)/privacy/` — privacy notice.
-- `components/*.tsx` — one file per section (`hero`, `features`, `quick-wins`, `process`, `founder`, `faq`, `cta`); chrome in `components/ui/`.
+- `components/*.tsx` — one file per section (`hero`, `features`, `process`, `founder`, `faq`, `cta`); chrome in `components/ui/`.
 - `components/links.ts` — booking URL, contact email, founder profile URLs, assessment/build price anchors, Umami website ID, site metadata strings. Empty `UMAMI_WEBSITE_ID` disables analytics.
 - `app/robots.ts`, `app/sitemap.ts` — crawl policy (home and privacy only).
 - `public/og.png` — social preview (1200×630).

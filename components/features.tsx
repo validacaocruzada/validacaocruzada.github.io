@@ -15,7 +15,20 @@ const advise: Offer[] = [
   },
 ]
 
-const build: Offer[] = [
+const automate: Offer[] = [
+  {
+    icon: 'bolt',
+    title: 'AI automations',
+    body: 'Work that arrives as documents, emails, photos and tickets, handled by AI inside your systems: purchase orders typed into the ERP, supplier files checked against the required list, field photos screened for anomalies, product descriptions written from ERP data, plain-language questions answered from your records. A person checks only the ambiguous cases.',
+  },
+  {
+    icon: 'package',
+    title: 'Software you own instead of a subscription',
+    body: 'If your team uses a small, stable part of an expensive tool, we rebuild that part around how you work: your data model, your workflow, AI where it helps, connected to your systems. Delivered in weeks for a fixed price; after migration you retire or reduce the subscription. Not a copy of the product, the part of the job your team actually does.',
+  },
+]
+
+const data: Offer[] = [
   {
     icon: 'database',
     title: 'Data pipelines and ETL',
@@ -62,13 +75,14 @@ export default function Features() {
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
           <h2 id="services-title" className="h2 mb-4 text-gray-100">What we do</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            Two kinds of work. Advice on where AI fits and how your team uses it; and the build itself, delivered running in your systems.
+            Advice on where AI fits and how your team uses it; then the build itself, delivered running in your systems.
           </p>
         </div>
 
         <div className="space-y-14">
           <Track id="advise-title" label="Advise" items={advise} cols="md:grid-cols-2" />
-          <Track id="build-title" label="Build" items={build} cols="md:grid-cols-3" />
+          <Track id="automate-title" label="Automate" items={automate} cols="md:grid-cols-2" />
+          <Track id="data-title" label="Data & models" items={data} cols="md:grid-cols-3" />
         </div>
 
         <p className="mx-auto mt-10 flex max-w-3xl items-start justify-center gap-3 text-center text-base leading-relaxed text-gray-400 sm:text-lg">

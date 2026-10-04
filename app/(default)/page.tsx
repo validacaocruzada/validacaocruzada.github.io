@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 
 import Hero from '@/components/hero'
 import Features from '@/components/features'
-import QuickWins from '@/components/quick-wins'
 import Process from '@/components/process'
 import Founder from '@/components/founder'
 import Cta from '@/components/cta'
@@ -19,7 +18,6 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      <QuickWins />
       <Process />
       <Founder />
       <Faq />
