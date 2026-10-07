@@ -15,10 +15,14 @@ export const ASSESSMENT_CREDIT_WINDOW = '90 days'
 // Empty string disables analytics entirely (no script is rendered).
 export const UMAMI_WEBSITE_ID = '3d8582be-744e-47ca-9fd5-540af09aa2f7'
 
+// Web3Forms (free plan) delivers the enquiry form to CONTACT_EMAIL. Key from web3forms.com; it is public by design.
+// Empty string hides the enquiry section entirely.
+export const WEB3FORMS_ACCESS_KEY = '64a3410f-c76f-4ccc-8b7d-b74cdbffbe87'
+
 // Metadata shared by app/layout.tsx (defaults) and app/(default)/page.tsx (home).
 export const SITE_TITLE = 'AI consulting and software development, fixed price | xval.ai'
 export const SITE_DESCRIPTION =
-  'We help you decide where AI fits, then build it: data pipelines, dashboards and metrics, machine learning models, training for your team. Fixed scope and price, delivered in 2–6 weeks.'
+  'We help you decide where AI fits, then build it: AI automations, software you own instead of subscriptions, data pipelines, dashboards and machine learning models. Fixed scope and price, delivered in 2–6 weeks.'
 export const SOCIAL_TITLE = 'Decide what to build with AI. Then we build it.'
 export const SOCIAL_DESCRIPTION =
   'AI consulting and software development from Portugal. Fixed-fee assessment, fixed-price builds in 2–6 weeks, you own the code.'

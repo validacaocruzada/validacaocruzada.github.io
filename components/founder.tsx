@@ -5,7 +5,7 @@ const linkClass = `rounded-sm text-purple-400 underline decoration-purple-400/40
 
 const founderFacts = [
   'PhD in machine learning; research in forecasting and decision analysis, cited around 780 times.',
-  'Runs every xval.ai engagement personally: the discovery session, the data work, the models and the training.',
+  'Runs every xval.ai engagement personally, from discovery and training to data, automation and software delivery.',
   'The person you meet on the call is the person accountable for the result. No sales hand-off.',
 ]
 

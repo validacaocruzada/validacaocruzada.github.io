@@ -4,6 +4,7 @@ import Hero from '@/components/hero'
 import Features from '@/components/features'
 import Process from '@/components/process'
 import Founder from '@/components/founder'
+import Enquiry from '@/components/enquiry'
 import Cta from '@/components/cta'
 import Faq from '@/components/faq'
 import { SITE_URL } from '@/components/links'
@@ -21,6 +22,7 @@ export default function Home() {
       <Process />
       <Founder />
       <Faq />
+      <Enquiry />
       <Cta />
     </>
   )

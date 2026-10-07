@@ -24,7 +24,7 @@ const automate: Offer[] = [
   {
     icon: 'package',
     title: 'Software you own instead of a subscription',
-    body: 'If your team uses a small, stable part of an expensive tool, we rebuild that part around how you work: your data model, your workflow, AI where it helps, connected to your systems. Delivered in weeks for a fixed price; after migration you retire or reduce the subscription. Not a copy of the product, the part of the job your team actually does.',
+    body: 'If your team uses a small, stable part of an expensive tool, we rebuild that part around how you work: your data model, your workflow, AI where it helps, connected to your systems. Delivered in weeks for a fixed price; after migration you retire or reduce the subscription. Not a copy of the product: the part of the job your team actually does.',
   },
 ]
 

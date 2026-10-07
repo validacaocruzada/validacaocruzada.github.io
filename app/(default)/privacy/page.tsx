@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-import { CONTACT_EMAIL, UMAMI_WEBSITE_ID } from '@/components/links'
+import { CONTACT_EMAIL, UMAMI_WEBSITE_ID, WEB3FORMS_ACCESS_KEY } from '@/components/links'
 
 export const metadata: Metadata = {
   title: 'Privacy',
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
           <h2 className="h4 mb-3">Website analytics</h2>
           <p>
             {UMAMI_WEBSITE_ID
-              ? 'We use Umami, a cookie-free analytics service that does not collect personal data. We record aggregate page views and clicks on the booking and email links.'
+              ? 'We use Umami, a cookie-free analytics service that does not collect personal data. We record aggregate page views and clicks on the booking and email links and the enquiry form button.'
               : 'This website uses no analytics, cookies or third-party trackers.'}
           </p>
         </section>
@@ -42,6 +42,19 @@ export default function PrivacyPage() {
             Booking uses Google Calendar appointment scheduling. The details you enter are processed by Google under its terms and stored in our calendar to run the call.
           </p>
         </section>
+
+        {WEB3FORMS_ACCESS_KEY && (
+          <section>
+            <h2 className="h4 mb-3">Enquiry form</h2>
+            <p>
+              The enquiry form is processed by Web3Forms as our data processor. It emails your answers to us, stores a copy for up to three years, and sends your IP and email address to spam filters (CleanTalk, Akismet). Details in the{' '}
+              <a href="https://web3forms.com/privacy" className={emailClass} target="_blank" rel="noopener noreferrer">
+                Web3Forms privacy policy
+              </a>
+              . We keep the email we receive like any other, for as long as needed to respond and to run any resulting engagement.
+            </p>
+          </section>
+        )}
 
         <section>
           <h2 className="h4 mb-3">Email</h2>

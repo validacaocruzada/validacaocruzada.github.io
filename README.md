@@ -15,8 +15,8 @@ npm run build    # static export to out/
 ## Where things live
 
 - `app/(default)/page.tsx` — section order and home metadata; `app/(default)/privacy/` — privacy notice.
-- `components/*.tsx` — one file per section (`hero`, `features`, `process`, `founder`, `faq`, `cta`); chrome in `components/ui/`.
-- `components/links.ts` — booking URL, contact email, founder profile URLs, assessment/build price anchors, Umami website ID, site metadata strings. Empty `UMAMI_WEBSITE_ID` disables analytics.
+- `components/*.tsx` — one file per section (`hero`, `features`, `process`, `founder`, `faq`, `enquiry`, `cta`); chrome in `components/ui/`.
+- `components/links.ts` — booking URL, contact email, founder profile URLs, assessment/build price anchors, Umami website ID, Web3Forms access key, site metadata strings. Empty `UMAMI_WEBSITE_ID` disables analytics; empty `WEB3FORMS_ACCESS_KEY` hides the enquiry form.
 - `app/robots.ts`, `app/sitemap.ts` — crawl policy (home and privacy only).
 - `public/og.png` — social preview (1200×630).
 
