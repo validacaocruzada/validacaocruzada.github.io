@@ -19,25 +19,21 @@ export default function Header() {
           </Link>
 
           <div className="flex items-center gap-6">
-            <nav className="hidden items-center gap-6 md:flex" aria-label="Primary navigation">
-              <a
-                href="/#services"
-                className={`rounded-sm text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
-              >
-                Services
-              </a>
-              <a
-                href="/#how-we-work"
-                className={`rounded-sm text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
-              >
-                How it works
-              </a>
-              <a
-                href="/#faq"
-                className={`rounded-sm text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
-              >
-                FAQ
-              </a>
+            {/* Five links plus the full booking label need ~900 px; below `lg` the header shows only the booking button. */}
+            <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary navigation">
+              {[
+                ['/#software', 'Software'],
+                ['/#training', 'Training'],
+                ['/#how-we-work', 'How it works'],
+              ].map(([href, label]) => (
+                <a
+                  key={href}
+                  href={href}
+                  className={`whitespace-nowrap rounded-sm text-sm font-medium text-gray-300 transition-colors duration-200 hover:text-white ${focusRing}`}
+                >
+                  {label}
+                </a>
+              ))}
             </nav>
             <a
               href={BOOKING_URL}

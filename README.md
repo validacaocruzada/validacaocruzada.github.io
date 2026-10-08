@@ -14,9 +14,10 @@ npm run build    # static export to out/
 
 ## Where things live
 
-- `app/(default)/page.tsx` — section order and home metadata; `app/(default)/privacy/` — privacy notice.
-- `components/*.tsx` — one file per section (`hero`, `features`, `process`, `founder`, `faq`, `enquiry`, `cta`); chrome in `components/ui/`.
-- `components/links.ts` — booking URL, contact email, founder profile URLs, assessment/build price anchors, Umami website ID, Web3Forms access key, site metadata strings. Empty `UMAMI_WEBSITE_ID` disables analytics; empty `WEB3FORMS_ACCESS_KEY` hides the enquiry form.
+- `app/(default)/page.tsx` — section order and home metadata; `app/(default)/privacy/` — privacy notice. `app/(default)/_faq/` is the FAQ page, hidden for now: the leading underscore keeps it out of the build. Rename it to `faq/` and restore the header/footer links and the sitemap entry to publish it.
+- `components/*.tsx` — one file per section (`hero`, `features` = Software and Training, `process`, `founder`, `faq`, `enquiry`, `cta`); chrome in `components/ui/`. The site publishes no prices; they live in `proposals/CATALOGUE.md`.
+- `components/links.ts` — booking URL, contact email, founder profile URLs, Umami website ID, Web3Forms access key, site metadata strings. Empty `UMAMI_WEBSITE_ID` disables analytics; empty `WEB3FORMS_ACCESS_KEY` hides the enquiry form.
+- `components/enquiry.tsx` — short BANT intake (need, timeline, who signs, budget band) plus name, organisation and email; the rest of `proposals/discovery-guide.md` route A is asked in the first minutes of the call.
 - `app/robots.ts`, `app/sitemap.ts` — crawl policy (home and privacy only).
 - `public/og.png` — social preview (1200×630).
 

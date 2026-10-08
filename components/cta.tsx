@@ -6,7 +6,7 @@ const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-pu
 const assurances: { icon: IconName; label: string }[] = [
   { icon: 'sparkles', label: 'No preparation' },
   { icon: 'clock', label: 'Straight answer in 30 minutes' },
-  { icon: 'clipboard', label: 'Proposal or assessment plan within a business day' },
+  { icon: 'clipboard', label: 'Pitch or “not a fit” within 2 business days' },
 ]
 
 export default function Cta() {
@@ -17,10 +17,10 @@ export default function Cta() {
           <div className="cta-grid absolute inset-0" aria-hidden="true" />
           <div className="relative mx-auto max-w-3xl">
             <h2 id="contact-title" className="h2 mb-5 text-gray-900">
-              Find out if your workflow is a fit.
+              Find out if your project is a fit.
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-gray-600 sm:text-xl">
-              In a free 30-minute call we look at the task and the data behind it. You leave with one of three answers: a fixed-price proposal for a clear build, a one-week assessment when the question is still open, or a straight “not a fit”.
+              In a free 30-minute call we look at what you need: the task and the data behind it, or who needs to learn what. Within 2 business days you get one of three answers: a one-page pitch for a fixed-price build or course, a Discovery Sprint or a test when the question is still open, or a straight “not a fit”.
             </p>
             <div className="flex justify-center">
               <a

@@ -4,13 +4,6 @@ export const CONTACT_EMAIL = 'hello@xval.ai'
 export const FOUNDER_LINKEDIN_URL = 'https://www.linkedin.com/in/pmarcelino'
 export const FOUNDER_SCHOLAR_URL = 'https://scholar.google.com/citations?user=Ii3e71YAAAAJ'
 
-// Commercial anchors shown on the page. Change here, not in the components.
-export const ASSESSMENT_PRICE = '€2,500'
-export const ASSESSMENT_DURATION = '1 week'
-export const BUILD_PRICE_RANGE = '€5,000–€25,000'
-// Assessment fee is credited once against a build that starts within this window.
-export const ASSESSMENT_CREDIT_WINDOW = '90 days'
-
 // Umami Cloud (free Hobby plan). Website ID from cloud.umami.is → Settings → Websites.
 // Empty string disables analytics entirely (no script is rendered).
 export const UMAMI_WEBSITE_ID = '3d8582be-744e-47ca-9fd5-540af09aa2f7'
@@ -20,10 +13,9 @@ export const UMAMI_WEBSITE_ID = '3d8582be-744e-47ca-9fd5-540af09aa2f7'
 export const WEB3FORMS_ACCESS_KEY = '64a3410f-c76f-4ccc-8b7d-b74cdbffbe87'
 
 // Metadata shared by app/layout.tsx (defaults) and app/(default)/page.tsx (home).
-export const SITE_TITLE = 'AI consulting and software development, fixed price | xval.ai'
+export const SITE_TITLE = 'AI software and training, fixed price | xval.ai'
 export const SITE_DESCRIPTION =
-  'We help you decide where AI fits, then build it: AI automations, software you own instead of subscriptions, data pipelines, dashboards and machine learning models. Fixed scope and price, delivered in 2–6 weeks.'
-export const SOCIAL_TITLE = 'Decide what to build with AI. Then we build it.'
-export const SOCIAL_DESCRIPTION =
-  'AI consulting and software development from Portugal. Fixed-fee assessment, fixed-price builds in 2–6 weeks, you own the code.'
+  'AI software that works on your data, and the courses, workshops and team training that teach people to use AI: discovery sprints, automations, data pipelines, machine learning models and online courses. Fixed scope, fixed price.'
+export const SOCIAL_TITLE = 'AI software and training, at a fixed price.'
+export const SOCIAL_DESCRIPTION = 'AI software and training from Portugal. Fixed-price software builds and courses; you own the result.'
 export const OG_IMAGE = { url: '/og.png', width: 1200, height: 630, alt: SOCIAL_TITLE }

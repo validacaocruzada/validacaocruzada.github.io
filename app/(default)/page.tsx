@@ -6,7 +6,6 @@ import Process from '@/components/process'
 import Founder from '@/components/founder'
 import Enquiry from '@/components/enquiry'
 import Cta from '@/components/cta'
-import Faq from '@/components/faq'
 import { SITE_URL } from '@/components/links'
 
 // Title, description and social cards come from the root layout defaults.
@@ -21,7 +20,6 @@ export default function Home() {
       <Features />
       <Process />
       <Founder />
-      <Faq />
       <Enquiry />
       <Cta />
     </>

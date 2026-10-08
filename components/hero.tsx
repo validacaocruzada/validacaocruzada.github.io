@@ -4,9 +4,9 @@ import { Icon, type IconName } from '@/components/icons'
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900'
 
 const highlights: { icon: IconName; label: string }[] = [
-  { icon: 'clock', label: '1-week assessment · 2–6-week builds' },
+  { icon: 'clock', label: 'Software builds in 2 to 6 weeks' },
   { icon: 'tag', label: 'Fixed scope, fixed price' },
-  { icon: 'key', label: 'You own the code' },
+  { icon: 'key', label: 'You own the result' },
 ]
 
 export default function Hero() {
@@ -18,13 +18,20 @@ export default function Hero() {
         <div className="pb-16 pt-32 md:pb-24 md:pt-44">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-5 text-xs font-bold uppercase tracking-widest text-purple-400 sm:text-sm">
-              AI consulting and software development
+              AI software and training
             </div>
             <h1 id="hero-title" className="h1 mb-6 text-gray-100">
-              Decide what to build with AI. Then we build it.
+              Software for your data. Training for your people.
             </h1>
             <p className="mx-auto mb-9 max-w-3xl text-lg leading-relaxed text-gray-400 sm:text-xl">
-              We tell you which parts of your operation are worth automating with machine learning and language models, then design, build and deliver the application into production. Fixed scope, fixed price, agreed before work starts. You own the code.
+              <a href="#software" className={`text-gray-200 underline decoration-purple-400/60 underline-offset-4 hover:text-white ${focusRing}`}>
+                Software
+              </a>
+              : automations, data pipelines and models, handed over working on your data.{' '}
+              <a href="#training" className={`text-gray-200 underline decoration-purple-400/60 underline-offset-4 hover:text-white ${focusRing}`}>
+                Training
+              </a>
+              : online courses, workshops and team sessions. Fixed scope, fixed price, agreed before work starts.
             </p>
 
             <div className="flex justify-center">
@@ -48,7 +55,7 @@ export default function Hero() {
             </ul>
 
             <p className="mt-8 text-sm leading-relaxed text-gray-400">
-              Free, 30 minutes, no preparation. You leave knowing whether your case is clear enough for a proposal, needs a one-week assessment first, or is not a fit.
+              Free, 30 minutes, no preparation. Within 2 business days you get a one-page pitch to agree, or a straight “not a fit”.
             </p>
             <p className="mt-3 text-sm text-gray-400">
               Prefer email?{' '}
