@@ -35,6 +35,10 @@ const suffixedClass = 'ml-[0.2em] max-w-[calc(100%-0.4em)]'
 export default function Enquiry() {
   const [values, setValues] = useState(empty)
   const [status, setStatus] = useState<Status>('idle')
+  // The confirmation quotes what was actually sent: fields stay editable while the request is in flight.
+  const [sent, setSent] = useState<Record<Field, string> | null>(null)
+  // Set by the first blocked submit, so assistive tech hears "invalid" only after an attempt, not on page load.
+  const [attempted, setAttempted] = useState(false)
   const thanks = useRef<HTMLParagraphElement>(null)
 
   useEffect(() => {
@@ -87,7 +91,7 @@ export default function Enquiry() {
         <select
           name={field}
           aria-label={label}
-          aria-invalid={false}
+          aria-invalid={attempted && !values[field]}
           required
           value={values[field]}
           onChange={update(field)}
@@ -141,6 +145,7 @@ export default function Enquiry() {
       const result = await response.json()
       if (result.success) {
         ;(window as Window & { umami?: { track: (event: string) => void } }).umami?.track('Enquiry Form')
+        setSent(answers)
       }
       setStatus(result.success ? 'sent' : 'error')
     } catch {
@@ -148,7 +153,7 @@ export default function Enquiry() {
     }
   }
 
-  const firstName = values.name.trim().split(/\s+/)[0]
+  const firstName = sent?.name.split(/\s+/)[0]
 
   return (
     <section id="enquiry" aria-labelledby="enquiry-title">
@@ -160,18 +165,18 @@ export default function Enquiry() {
           Not ready to book a call? Fill in the sentence and Pedro replies within a business day.
         </p>
 
-        {status === 'sent' ? (
+        {status === 'sent' && sent ? (
           <p
             ref={thanks}
             tabIndex={-1}
             role="status"
             className="text-xl leading-relaxed text-gray-100 focus:outline-none sm:text-2xl md:text-4xl md:leading-relaxed"
           >
-            {firstName ? `Thanks, ${firstName}.` : 'Thanks.'} Pedro will reply to {values.email.trim()} within a business
+            {firstName ? `Thanks, ${firstName}.` : 'Thanks.'} Pedro will reply to {sent.email} within a business
             day.
           </p>
         ) : (
-          <form onSubmit={submit} method="post" action="https://api.web3forms.com/submit">
+          <form onSubmit={submit} onInvalidCapture={() => setAttempted(true)} method="post" action="https://api.web3forms.com/submit">
             <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
             <input type="hidden" name="subject" value="xval.ai enquiry" />
             <input type="hidden" name="from_name" value="xval.ai website" />
