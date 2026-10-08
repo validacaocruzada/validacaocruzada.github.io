@@ -14,8 +14,7 @@ export const WEB3FORMS_ACCESS_KEY = '64a3410f-c76f-4ccc-8b7d-b74cdbffbe87'
 
 // Metadata shared by app/layout.tsx (defaults) and app/(default)/page.tsx (home).
 export const SITE_TITLE = 'AI software and training, fixed price | xval.ai'
-export const SITE_DESCRIPTION =
-  'AI software that works on your data, and the courses, workshops and team training that teach people to use AI: discovery sprints, automations, data pipelines, machine learning models and online courses. Fixed scope, fixed price.'
+export const SITE_DESCRIPTION = 'AI software built and tested on your data, plus online courses, workshops and team training. Fixed price, agreed before work starts.'
 export const SOCIAL_TITLE = 'AI software and training, at a fixed price.'
-export const SOCIAL_DESCRIPTION = 'AI software and training from Portugal. Fixed-price software builds and courses; you own the result.'
+export const SOCIAL_DESCRIPTION = 'AI software and training from Portugal. Fixed-price software builds and courses; what we build is yours on full payment.'
 export const OG_IMAGE = { url: '/og.png', width: 1200, height: 630, alt: SOCIAL_TITLE }

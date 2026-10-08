@@ -5,7 +5,6 @@ import Footer from '@/components/ui/footer'
 
 export const metadata: Metadata = {
   title: 'Page not found',
-  robots: { index: false },
 }
 
 // Rendered inside the root layout only, so it must supply the skip-link target itself.

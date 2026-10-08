@@ -67,7 +67,7 @@ const faqs: FaqEntry[] = [
 ]
 
 export default function Faq() {
-  // Links such as the footer's /faq#data-protection must land on an open answer, not a collapsed question.
+  // Deep links such as /faq#data-protection must land on an open answer, not a collapsed question.
   useEffect(() => {
     const openTarget = () => {
       const target = window.location.hash && document.getElementById(window.location.hash.slice(1))

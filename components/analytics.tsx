@@ -6,5 +6,5 @@ import { UMAMI_WEBSITE_ID } from '@/components/links'
 // recorded as custom events automatically; no dashboard goal setup needed.
 export default function Analytics() {
   if (!UMAMI_WEBSITE_ID) return null
-  return <Script defer src="https://cloud.umami.is/script.js" data-website-id={UMAMI_WEBSITE_ID} />
+  return <Script defer src="https://cloud.umami.is/script.js" data-website-id={UMAMI_WEBSITE_ID} data-domains="xval.ai" />
 }

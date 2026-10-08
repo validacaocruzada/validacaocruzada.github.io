@@ -4,9 +4,9 @@ import { Icon, type IconName } from '@/components/icons'
 const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900'
 
 const highlights: { icon: IconName; label: string }[] = [
-  { icon: 'clock', label: 'Software builds in 2 to 6 weeks' },
-  { icon: 'tag', label: 'Fixed scope, fixed price' },
-  { icon: 'key', label: 'You own the result' },
+  { icon: 'clock', label: 'Software builds in 2 to 6 weeks from kick-off' },
+  { icon: 'tag', label: 'Fixed price, fixed time' },
+  { icon: 'key', label: 'You own what we build, on full payment' },
 ]
 
 export default function Hero() {
@@ -31,7 +31,7 @@ export default function Hero() {
               <a href="#training" className={`text-gray-200 underline decoration-purple-400/60 underline-offset-4 hover:text-white ${focusRing}`}>
                 Training
               </a>
-              : online courses, workshops and team sessions. Fixed scope, fixed price, agreed before work starts.
+              : online courses, workshops and team sessions. Fixed price and the must-haves agreed before work starts.
             </p>
 
             <div className="flex justify-center">
@@ -55,12 +55,20 @@ export default function Hero() {
             </ul>
 
             <p className="mt-8 text-sm leading-relaxed text-gray-400">
-              Free, 30 minutes, no preparation. Within 2 business days you get a one-page pitch to agree, or a straight “not a fit”.
+              Free, 30 minutes, no preparation, in Portuguese or English. Within 2 business days of the call you get a one-page pitch to agree, or a straight “not a fit”.
             </p>
             <p className="mt-3 text-sm text-gray-400">
-              Prefer email?{' '}
+              Prefer to write?{' '}
               <a
-                className={`text-sm text-gray-400 underline-offset-4 hover:underline ${focusRing}`}
+                className={`text-gray-200 underline decoration-purple-400/60 underline-offset-4 hover:text-white ${focusRing}`}
+                href="#enquiry"
+                data-umami-event="Enquiry Link"
+              >
+                Use the form
+              </a>{' '}
+              or email{' '}
+              <a
+                className={`text-gray-200 underline decoration-purple-400/60 underline-offset-4 hover:text-white ${focusRing}`}
                 href={`mailto:${CONTACT_EMAIL}`}
                 data-umami-event="Email"
               >

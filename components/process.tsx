@@ -6,32 +6,32 @@ const steps: { n: string; icon: IconName; title: string; duration: string; body:
     icon: 'phone',
     title: 'Agree',
     duration: 'Free call · pitch within 2 business days',
-    body: 'On the call you describe the task and the data; we say whether it is a fit. Within 2 business days you get a one-page pitch: the problem, what will be built, what is left out. We agree it with you on a short call before any price. If shaping needs your data in our hands, or an unknown has to be measured first, the pitch starts with a Discovery Sprint or a test. Nothing is built before you sign.',
+    body: 'On the call you describe the task and the data, or who needs to learn what; we say whether it is a fit. Within 2 business days you get a one-page pitch: the problem, the must-haves we will deliver, and what is left out. We agree it with you on a short call before any price. If shaping needs your data in our hands, or an unknown has to be measured first, the pitch starts with a Discovery Sprint or a test. Nothing starts before you sign.',
   },
   {
     n: '02',
     icon: 'code',
     title: 'Build',
-    duration: 'Fixed scope · fixed price',
-    body: 'Software: we build the agreed must-haves on your data. Starter builds run on demand from files; Pilot and Production builds are deployed where they will run, preferably in your own cloud account. Each ends when the acceptance test is met, with a handover: code in your repository, runbook, evaluation set and a one-hour session. Courses: produced module by module from your sources, each module reviewed once by you, delivered ready to upload.',
+    duration: 'Fixed price · must-haves agreed in writing',
+    body: 'Software: we build the must-haves agreed in the pitch, on your data. Smaller builds run on demand from files; larger ones are deployed where they will run, preferably in your own cloud account. Each build ends when it passes the acceptance test agreed before work starts, with a handover pack: code in your repository, runbook, evaluation set, credentials list and a one-hour session. Courses: audience, outcomes and sources agreed at kickoff, then produced module by module, each module reviewed once by you, delivered ready to upload. Workshops and team sessions: prepared for your audience and run on the agreed dates.',
   },
   {
     n: '03',
     icon: 'refresh',
     title: 'Operate',
-    duration: 'Software · 3 months included, then monthly',
-    body: 'Every software build includes 3 months of Care: hosting administration, monitoring, security updates and small fixes, so you see it working before you choose. Then pick a monthly plan with 30 days’ notice, or take the handover pack to your own team or another supplier.',
+    duration: 'Software · 3 months of Care included, then monthly',
+    body: 'Every software build includes 3 months of Care, our maintenance plan: hosting administration, monitoring, security updates and small fixes, so you see it working before you choose. Then pick a monthly plan, cancellable with 30 days’ notice, or run it yourselves or with another supplier using the handover pack. Hosting and AI model usage are always paid separately.',
   },
 ]
 
 export default function Process() {
   return (
-    <section id="how-we-work" className="scroll-mt-20" aria-labelledby="process-title">
+    <section id="how-we-work" aria-labelledby="process-title">
       <div className="max-w-6xl mx-auto border-t border-gray-800/80 px-4 py-16 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
           <h2 id="process-title" className="h2 mb-4 text-gray-100">How it works</h2>
           <p className="text-lg leading-relaxed text-gray-400 sm:text-xl">
-            One call, a one-page pitch you agree, then a fixed-price build or course of fixed length. Every software build includes 3 months of care; after that, a monthly plan or a full handover.
+            One call, a one-page pitch you agree, then a build, course or workshop at a fixed price. Every software build includes 3 months of Care; after that, a monthly plan or a full handover.
           </p>
         </div>
 

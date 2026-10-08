@@ -19,7 +19,7 @@ export default function Header() {
           </Link>
 
           <div className="flex items-center gap-6">
-            {/* Five links plus the full booking label need ~900 px; below `lg` the header shows only the booking button. */}
+            {/* Three links plus the full booking label need ~900 px; below `lg` the header shows only the booking button. */}
             <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary navigation">
               {[
                 ['/#software', 'Software'],

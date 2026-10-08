@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
@@ -31,14 +30,8 @@ module.exports = {
           900: '#262668',
         },
       },
-      spacing: {
-        '9/16': '56.25%',
-        '3/4': '75%',
-        '1/1': '100%',
-      },
       fontFamily: {
         inter: ['var(--font-inter)', 'sans-serif'],
-        'architects-daughter': ['var(--font-architects-daughter)', 'sans-serif']
       },
       fontSize: {
         xs: '0.75rem',
@@ -52,9 +45,6 @@ module.exports = {
         '5xl': '3.25rem',
         '6xl': '4rem',
       },
-      inset: {
-        'full': '100%',
-      },
       letterSpacing: {
         tighter: '-0.02em',
         tight: '-0.01em',
@@ -62,12 +52,6 @@ module.exports = {
         wide: '0.01em',
         wider: '0.02em',
         widest: '0.4em',
-      },
-      minWidth: {
-        '10': '2.5rem',
-      },
-      scale: {
-        '98': '.98'
       },
     },
   },

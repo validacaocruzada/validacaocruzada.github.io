@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <Image src={Logo} alt="xval.ai" className="h-6 w-auto" />
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-gray-400">
-              AI software and training from Portugal. Fixed-price discovery sprints, tests, builds and courses; you own the result.
+              AI software and training from Portugal. Fixed-price Discovery Sprints, tests, builds and courses; what we build is yours on full payment.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-gray-800 pt-6 text-xs text-gray-400">
-          &copy; <Year /> Validação Cruzada Lda. &middot; NIPC 516373366 &middot; Portugal &middot; xval.ai
+          &copy; <Year /> Validação Cruzada, Lda. &middot; NIPC 516 373 366 &middot; Portugal &middot; xval.ai
         </div>
       </div>
     </footer>

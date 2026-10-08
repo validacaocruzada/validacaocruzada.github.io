@@ -1,17 +1,17 @@
 import { BOOKING_URL, CONTACT_EMAIL } from '@/components/links'
 import { Icon, type IconName } from '@/components/icons'
 
-const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100'
+const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-700 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100'
 
 const assurances: { icon: IconName; label: string }[] = [
   { icon: 'sparkles', label: 'No preparation' },
-  { icon: 'clock', label: 'Straight answer in 30 minutes' },
+  { icon: 'clock', label: 'Fit or not, said on the call' },
   { icon: 'clipboard', label: 'Pitch or “not a fit” within 2 business days' },
 ]
 
 export default function Cta() {
   return (
-    <section id="contact" className="scroll-mt-20" aria-labelledby="contact-title">
+    <section id="contact" aria-labelledby="contact-title">
       <div className="max-w-6xl mx-auto border-t border-gray-800/80 px-4 py-16 sm:px-6 md:py-24">
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gray-100 px-6 py-12 text-center shadow-2xl md:px-12 md:py-16">
           <div className="cta-grid absolute inset-0" aria-hidden="true" />
@@ -20,7 +20,7 @@ export default function Cta() {
               Find out if your project is a fit.
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-gray-600 sm:text-xl">
-              In a free 30-minute call we look at what you need: the task and the data behind it, or who needs to learn what. Within 2 business days you get one of three answers: a one-page pitch for a fixed-price build or course, a Discovery Sprint or a test when the question is still open, or a straight “not a fit”.
+              In a free 30-minute call we look at what you need: the task and the data behind it, or who needs to learn what. Within 2 business days you get a one-page pitch to agree, or a straight “not a fit”. If a question is still open, the pitch starts with a Discovery Sprint or a test.
             </p>
             <div className="flex justify-center">
               <a
@@ -42,12 +42,20 @@ export default function Cta() {
               ))}
             </ul>
             <p className="mt-6 text-sm text-gray-600">
-              30 minutes with Pedro Marcelino, founder. No sales hand-off.
+              30 minutes with Pedro Marcelino, founder, in Portuguese or English. No sales hand-off.
             </p>
             <p className="mt-2 text-sm text-gray-600">
-              Prefer email?{' '}
+              Prefer to write?{' '}
               <a
-                className={`text-gray-700 underline-offset-4 hover:underline ${focusRing}`}
+                className={`text-gray-700 underline decoration-purple-600/60 underline-offset-4 hover:text-gray-900 ${focusRing}`}
+                href="#enquiry"
+                data-umami-event="Enquiry Link"
+              >
+                Use the form
+              </a>{' '}
+              or email{' '}
+              <a
+                className={`text-gray-700 underline decoration-purple-600/60 underline-offset-4 hover:text-gray-900 ${focusRing}`}
                 href={`mailto:${CONTACT_EMAIL}`}
                 data-umami-event="Email"
               >
