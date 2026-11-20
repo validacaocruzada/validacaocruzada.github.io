@@ -5,8 +5,8 @@ const focusRing = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-pu
 
 const assurances: { icon: IconName; label: string }[] = [
   { icon: 'sparkles', label: 'No preparation' },
-  { icon: 'clock', label: 'Fit or not, said on the call' },
-  { icon: 'clipboard', label: 'Pitch or “not a fit” within 2 business days' },
+  { icon: 'check-badge', label: 'Fit or not, said on the call' },
+  { icon: 'chat-bubble', label: 'In Portuguese or English' },
 ]
 
 export default function Cta() {
@@ -17,10 +17,10 @@ export default function Cta() {
           <div className="cta-grid absolute inset-0" aria-hidden="true" />
           <div className="relative mx-auto max-w-3xl">
             <h2 id="contact-title" className="h2 mb-5 text-gray-900">
-              Find out if your project is a fit.
+              Find out in 30 minutes if your task fits.
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-gray-600 sm:text-xl">
-              In a free 30-minute call we look at what you need: the task and the data behind it, or who needs to learn what. Within 2 business days you get a one-page pitch to agree, or a straight “not a fit”. If a question is still open, the pitch starts with a Discovery Sprint or a test.
+              Book a free call. We scope your task with you and, if it fits, agree a kickoff date. Three weeks later it is running.
             </p>
             <div className="flex justify-center">
               <a
@@ -42,18 +42,7 @@ export default function Cta() {
               ))}
             </ul>
             <p className="mt-6 text-sm text-gray-600">
-              30 minutes with Pedro Marcelino, founder, in Portuguese or English. No sales hand-off.
-            </p>
-            <p className="mt-2 text-sm text-gray-600">
-              Prefer to write?{' '}
-              <a
-                className={`text-gray-700 underline decoration-purple-600/60 underline-offset-4 hover:text-gray-900 ${focusRing}`}
-                href="#enquiry"
-                data-umami-event="Enquiry Link"
-              >
-                Use the form
-              </a>{' '}
-              or email{' '}
+              Prefer to write? Email{' '}
               <a
                 className={`text-gray-700 underline decoration-purple-600/60 underline-offset-4 hover:text-gray-900 ${focusRing}`}
                 href={`mailto:${CONTACT_EMAIL}`}

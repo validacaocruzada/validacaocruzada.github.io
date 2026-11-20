@@ -14,10 +14,10 @@ npm run build    # static export to out/
 
 ## Where things live
 
-- `app/(default)/page.tsx` — section order and home metadata; `app/(default)/privacy/` — privacy notice. `app/(default)/_faq/` is the FAQ page, hidden for now: the leading underscore keeps it out of the build. Rename it to `faq/` and restore the header/footer links and the sitemap entry to publish it.
-- `components/*.tsx` — one file per section, in page order (`hero`, `features` = Software and Training, `process`, `founder`, `cta`, `enquiry`); `faq` is used only by the hidden FAQ page; chrome in `components/ui/`. The site publishes no prices; they live in `../proposals/CATALOGUE.md` (a sibling folder, not in this repo).
-- `components/links.ts` — booking URL, contact email, founder profile URLs, Umami website ID, Web3Forms access key, site metadata strings. Empty `UMAMI_WEBSITE_ID` disables analytics; Umami only reports from xval.ai (`data-domains` in `components/analytics.tsx`); empty `WEB3FORMS_ACCESS_KEY` hides the enquiry form.
-- `components/enquiry.tsx` — short BANT intake (need, timeline, who signs, budget band) plus name, organisation and email; the rest of route A in `../proposals/discovery-guide.md` (signer's name and whether they join a call, why now, systems and sample, public-body route) is asked in the first minutes of the call. The form posts to Web3Forms natively (`method`/`action`, so it works before hydration or without JS) and, once hydrated, via `fetch`.
+- `app/(default)/page.tsx` — section order and home metadata; `app/(default)/privacy/` — privacy notice.
+- `components/*.tsx` — one file per section, in page order (`hero`, `benefits`, `process` = How it works, `automations` = examples, `faq`, `cta`); chrome in `components/ui/`. The page sells one product, the Automation (3 weeks, €3,000, 3 months of support), and follows the structure of renora.io/333mvp; the product is defined in `../proposals/CATALOGUE.md` (a sibling folder, not in this repo).
+- `components/links.ts` — booking URL, contact email, founder profile URLs, Umami website ID, site metadata strings. Empty `UMAMI_WEBSITE_ID` disables analytics; Umami only reports from xval.ai (`data-domains` in `components/analytics.tsx`).
+- Contact is the booking link and the email address; the enquiry form (Web3Forms) was removed with the 2026-11 rebuild.
 - `app/robots.ts`, `app/sitemap.ts` — crawl policy (allow all) and sitemap (home and privacy).
 - `public/og.png` — social preview (1200×630).
 

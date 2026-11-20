@@ -22,9 +22,9 @@ export default function Header() {
             {/* Three links plus the full booking label need ~900 px; below `lg` the header shows only the booking button. */}
             <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary navigation">
               {[
-                ['/#software', 'Software'],
-                ['/#training', 'Training'],
-                ['/#how-we-work', 'How it works'],
+                ['/#automations', 'Examples'],
+                ['/#how-it-works', 'How it works'],
+                ['/#faq', 'FAQ'],
               ].map(([href, label]) => (
                 <a
                   key={href}

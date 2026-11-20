@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-import { CONTACT_EMAIL, OG_IMAGE, SITE_URL, UMAMI_WEBSITE_ID, WEB3FORMS_ACCESS_KEY } from '@/components/links'
+import { CONTACT_EMAIL, OG_IMAGE, SITE_URL, UMAMI_WEBSITE_ID } from '@/components/links'
 
 const title = 'Privacy · xval.ai'
 const description = 'How xval.ai handles website, contact and project data.'
@@ -61,26 +61,6 @@ export default function PrivacyPage() {
           </p>
         </section>
 
-        {WEB3FORMS_ACCESS_KEY && (
-          <section id="enquiry-form">
-            <h2 className="h4 mb-3">Enquiry form</h2>
-            <p>
-              The form collects your name, organisation, what you need and by when, who signs, a budget range and your work email. We use them to reply to your enquiry and prepare a call, on the basis of our legitimate interest in answering business enquiries (Art. 6(1)(f) GDPR). Every field is needed for a useful reply; if you prefer, email us instead.
-            </p>
-            <p className="mt-3">
-              The form is processed for us by Web3Forms (Web3Creative, India) under its{' '}
-              <a href="https://web3forms.com/dpa" className={emailClass} target="_blank" rel="noopener noreferrer">
-                data processing agreement
-              </a>
-              . Web3Forms emails your answers to us and keeps a copy for up to three years on Amazon Web Services, Cloudflare and Hetzner infrastructure; your IP and email address are checked by the spam filters CleanTalk and Akismet (USA). Transfers outside the EEA are covered by the European Commission&apos;s Standard Contractual Clauses included in that agreement. Details in the{' '}
-              <a href="https://web3forms.com/privacy" className={emailClass} target="_blank" rel="noopener noreferrer">
-                Web3Forms privacy policy
-              </a>
-              . We keep the email we receive like any other, for as long as needed to respond and to run any resulting engagement.
-            </p>
-          </section>
-        )}
-
         <section>
           <h2 className="h4 mb-3">Email</h2>
           <p>
@@ -121,7 +101,7 @@ export default function PrivacyPage() {
           </p>
         </section>
 
-        <p className="text-sm">Last updated: October 2026.</p>
+        <p className="text-sm">Last updated: November 2026.</p>
 
         <Link className="inline-block text-purple-400 underline decoration-purple-400/40 underline-offset-4 hover:text-purple-300" href="/">
           Back to xval.ai

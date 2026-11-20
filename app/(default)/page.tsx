@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 
 import Hero from '@/components/hero'
-import Features from '@/components/features'
+import Benefits from '@/components/benefits'
 import Process from '@/components/process'
-import Founder from '@/components/founder'
-import Enquiry from '@/components/enquiry'
+import Automations from '@/components/automations'
+import Faq from '@/components/faq'
 import Cta from '@/components/cta'
 import { CONTACT_EMAIL, FOUNDER_LINKEDIN_URL, FOUNDER_SCHOLAR_URL, SITE_URL } from '@/components/links'
 
@@ -35,11 +35,11 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Hero />
-      <Features />
+      <Benefits />
       <Process />
-      <Founder />
+      <Automations />
+      <Faq />
       <Cta />
-      <Enquiry />
     </>
   )
 }
